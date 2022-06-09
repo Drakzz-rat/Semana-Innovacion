@@ -437,13 +437,22 @@ footer p{
   width: 100%;
 }
 
-@media (max-width:430px){
+@media (max-width:400px){
+
   .imagenes_item img{
     border-radius: 50px;
     height: 200px;
-  }
+  };
 
   .uk-overlay2{
-    padding: 1px 1px;
-  }
-  }
+    padding: 3px 3px;
+  };
+}
+
+@media (min-width: 800px) and (max-width: 1500px) {
+  .uk-overlay2{
+    padding: 30px 30px;
+  };
+  };
+
+
