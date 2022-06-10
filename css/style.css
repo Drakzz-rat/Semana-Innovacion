@@ -1,13 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap');
+@import url('http://fonts.cdnfonts.com/css/gotham');
+
+*{
+  font-family: 'Poppins', sans-serif;
+}
 
 .inicio{
   background: linear-gradient(to right, #2e95a7, #23A2B7, #23A2B7, #23A2B7, #2ba5bb, #2ba5bb, #2e95a7); 
 }
 
+.videos_talleristas_a{
+  position: relative;
+  width: 100%;
+}
+
+.ganadores2{
+  cursor: default;
+  top: 0;
+  color: white;
+  margin-bottom: 20px;
+  position: absolute;
+  font-family: 'Poppins', sans-serif;
+  border: black;
+  border-radius: 10px;
+  padding: 10px;
+  width: 50%;
+  text-align: end;
+  background-color: rgb(35, 162, 183, 0.7);
+  box-shadow: 5px 5px 5px  rgba(0,0,0,0.5);
+  font-size: 20px;
+  cursor: default;
+}
+
+
+
+
 .texto a{
   font-size: 25px;
   color: #222;
+}
 
+.wave_links_1{
+  transform: rotate(180deg);
 }
 .programas_texto{
   display: flex;
@@ -39,6 +73,19 @@
 
 .carousel_talleristas {
   background-color: #23A2B7;
+}
+
+.carousel_talleristas h1{
+  font-family: 'Poppins', sans-serif;
+
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+  text-shadow: 0.5px 0.5px 0 black,  0.5px -0.5px black, -0.5px  0.5px 0 black, -0.5px -0.5px black;
+}
+
+.fondo_flecha{
+  background-color: rgb(0, 0, 0);
 }
 
 .modal-content button{
@@ -442,6 +489,11 @@ footer p{
   color: white;
 }
 
+.botones_color a{
+padding: 10px;
+background-color: white;
+}
+
 #prueba{
   margin-bottom: 30px;
 }
@@ -452,6 +504,35 @@ footer p{
   height: 370px;
 }
 
+.links_siem{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+}
+
+.links_siem p{
+  font-family: 'Poppins', sans-serif;
+  text-align: justify;
+  text-align: center;
+}
+
+.formatos button{
+  margin: 40px;
+  background-color: #23A2B7;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.24);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+.link-siem h1{
+  font-family: 'Poppins', sans-serif;
+  color: #ff8308;
+  text-shadow: 0.5px 0.5px 0 black,  0.5px -0.5px black, -0.5px  0.5px 0 black, -0.5px -0.5px black;
+}
 
 .boton_mover svg{
   color: white;
@@ -476,12 +557,14 @@ footer p{
   margin-top: 20px;
   
 }
+
 .col{
   display: flex;
   text-align: center;
   align-items: center;
   justify-content: center;
 }
+
 .primero{
   height: 200px;
   width: 200px;
@@ -545,31 +628,26 @@ footer p{
 
 
 .ganadores{
-  position: absolute;
-  font-size: 18px;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
-.centrar_ganadores{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  height: 50%;
-}
+
 
 .ganadores a{
-  font-family: 'Poppins', sans-serif;
-  border: black;
+margin-top: 20px;
+position: absolute;
+font-family: 'Poppins', sans-serif;
+border: black;
 border-radius: 10px;
-width: 200px;
 padding: 10px;
-background-color: #ff8308;
-color: white;
-font-weight: bold; 
+width: 50%;
+text-align: end;
+background-color: rgb(35, 162, 183, 0.7);
 box-shadow: 5px 5px 5px  rgba(0,0,0,0.5);
-font-size: 25px;
+font-size: 20px;
+cursor: default;
 }
+
 
 @media (max-width:400px){
   .imagen{
@@ -582,6 +660,12 @@ font-size: 25px;
   }
 }
 
+#icon_wrapper {
+  position: fixed;
+  top: 25%;
+  right: 0px;
+  z-index: 99999;
+}
 .wave{
   transform: rotate(180deg);
 }
@@ -610,5 +694,4 @@ font-size: 25px;
   };
   };
 
-
-
+  
