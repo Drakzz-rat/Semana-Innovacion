@@ -137,7 +137,7 @@ var defaults = {
   channel: 'youtube',
   facebook: {},
   youtube: {
-    autoplay: 0,
+    autoplay: 1,
     cc_load_policy: 1,
     color: null,
     controls: 1,
@@ -416,3 +416,6 @@ var triggerEvent = exports.triggerEvent = function triggerEvent(el, eventName, o
 });
 
 new ModalVideo('.video1');
+new ModalVideo('.video2');
+new ModalVideo('.video3');
+

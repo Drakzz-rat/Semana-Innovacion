@@ -11,13 +11,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/css/uikit.min.css" />
     <link rel="stylesheet" href="/css/modal-video.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-
 </head>
 <body> 
 
-  <nav class="navbar navbar-expand-lg navbar-light ">
-    <img class="img_nav" width="200" height="100" href="#" src="https://semie.ucp.edu.co/wp-content/uploads/2021/06/cropped-Componente-2-–-1.png">
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <img class="img_nav" width="150" height="100" href="#" src="/img/LOGO SEMIE.png">
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon " ></span>
@@ -25,16 +23,19 @@
     
     <div class="collapse navbar-collapse uk-flex-right@m uk-flex-right@xl" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-item nav-link active" href="#prueba">Home <span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link" href="#prueba">Features</a>
-        <a class="nav-item nav-link" href="#">Pricing</a>
-        <a class="nav-item nav-link disabled" href="#">Disabled</a>
+        <a class="nav-item nav-link active" href="#Inicio">Inicio <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="#Programas">Categorias</a>
+        <a class="nav-item nav-link" href="#Calendarios">Agenda</a>
+        <a class="nav-item nav-link" href="#Talleristas">Talleristas</a>
+        <a class="nav-item nav-link" href="#Ganadores">Ganadores</a>
+        <a class="nav-item nav-link" href="#Videos">Videos</a>
       </div>
     </div>
   </nav>
 
-    <div class="container texto">
-    <span>Semana de la Innovación Educativa    </span>
+    <div class="container texto" id="Inicio">
+    <span>Semana de la Innovación<br> Educativa</span><br>
+    <a>26 al 29 de Julio del 2022</a>
   </div>
 
     <div class="contador container">
@@ -42,16 +43,83 @@
     
       </div>
     </div>
-    <button class="btn">AAAA</button>
 
+  
+  <div class="inscribete">
+    <div class="btn_content">
+      <button id="Formulario" class="btn_inscribete">INSCRIBETE!</button>
+    </div>
+  </div>
 
-  <div class="container seleccionar_calendar">
-  <button type="button" onclick="calendario1()" class="btn btn-success">Profesores</button>
-  <button type="button" onclick="calendario2()" class="btn btn-success">ADM</button>
-  <button type="button" onclick="calendario3()" class="btn btn-success">Estudiantes</button>
 </div>
 
-<div class="container seleccionar_titulo" >
+<div  id="Programas" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.90,69.56 C200.00,-101.15 272.23,223.51 502.48,6.43 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #f3a463 ;"></path></svg></div>
+<div class="informativo_programas row">
+ <div class="col">
+  <button  class="modal_editar" type="button" data-toggle="modal" data-target="#exampleModalCenter">
+    <label>
+      <input type="checkbox" />
+        <div class="primero">
+          <div class="modal_">
+            <img src="/img/naranja.png" class="modal_"  alt="Vanessa"><br>
+            <a>Innovación Educativa</a>
+          </div> 
+        </div>
+    </label>
+  </div>
+
+    <div class="col">
+      <button  class="modal_editar" type="button" data-toggle="modal" data-target="#exampleModalCenter">
+      <label>
+        <input type="checkbox" />
+          <div class="primero">
+            <div class="modal_">
+              <img src="/img/naranja.png" class="modal_"  alt="Vanessa"><br>
+              <a>Gestión de informacion</a>
+            </div> 
+          </div>
+      </label>
+    </div>
+
+    <div class="col">
+      <button  class="modal_editar" type="button" data-toggle="modal" data-target="#exampleModalCenter">
+      <label>
+        <input type="checkbox" />
+          <div class="primero">
+            <div class="modal_">
+              <img src="/img/naranja.png" class="modal_"  alt="Vanessa"><br>
+              <a>Gamificación</a>
+            </div> 
+          </div>
+      </label>
+    </button>
+    </div>
+
+    <div class="col">
+      <button  class="modal_editar" type="button" data-toggle="modal" data-target="#exampleModalCenter">
+      <label>
+        <input type="checkbox" />
+          <div class="primero">
+            <div class="modal_">
+              <img src="/img/naranja.png" class="modal_"  alt="Vanessa"><br>
+              <a>Producuccion de Contenidos Educativos</a>
+            </div> 
+          </div>
+      </label>
+    </div>
+   
+  </div>
+
+  <div class="wave_cerrar_informativo" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.90,69.56 C200.00,-101.15 272.23,223.51 502.48,6.43 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #f3a463 ;"></path></svg></div>
+
+
+<div class="container seleccionar_calendar">
+  <button type="button" onclick="calendario1()" class=" btn_elegir">Profesores</button>
+  <button type="button" onclick="calendario2()" class=" btn_elegir">Adtvo</button>
+  <button type="button" onclick="calendario3()" class=" btn_elegir">Estudiantes</button>
+</div>
+
+<div class="container seleccionar_titulo" id="Calendarios">
 <h2 id="titulo"> Estudiantes </h1>
 </div>
 
@@ -76,27 +144,10 @@
 </div>
 
 
+<div  data-aos="fade-up" data-aos-duration="2000" class="talleristas_container" id="Talleristas">
+<div  style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.90,69.56 C200.00,-101.15 272.23,223.51 502.48,6.43 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #23A2B7 ;"></path></svg></div>
 
-<div data-aos="fade-up" data-aos-duration="2000" class="imagen .uk-container-xsmall">
-  <div style="height: 150px; overflow: hidden;" class="wave" >
-    <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
-      <path d="M0.00,49.98 C149.99,150.00 340.00,11.36 499.72,52.80 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: rgb(255, 255, 255);"></path>
-    </svg>
-  </div>
-
-  <div data-aos="fade-up" data-aos-duration="2000" class="ganadores">
-    <a>Ganadores</a>
-  </div>
-
-  <div style="height: 150px; overflow: hidden;" class="wave2 float-bottom" >
-    <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
-      <path d="M0.00,49.98 C149.99,150.00 340.00,11.36 499.72,52.80 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: rgb(255, 255, 255);"></path>
-    </svg>
-  </div>
-</div>
-
-
-<div data-aos="fade-up" data-aos-duration="2000" class="carousel_talleristas position-relative" >
+<div class="carousel_talleristas position-relative" >
   <div class="uk-hidden@s gif_deslizar">
     <img src="/img/swipe.fafa7564.gif" width="100px" height="100px">
 </div>
@@ -194,35 +245,40 @@
               </label>
             </li>
             
-      </div>
-   
-
-     
+      </div>   
       <div class="uk-visible@s boton">
           <a class="uk-position-center-left-out uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
           <a class="uk-position-center-right-out uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
-      </div>
-      
-      
+      </div>     
   </div>
- 
-  <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin uk-position-relative">
-     
-  </ul>
-
+  <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-position-relative" style="color: white;"></ul>
 </div>
 </div>
 
-<div class="informacion" id="prueba">
-  <img src="https://semie.ucp.edu.co/wp-content/uploads/2021/07/Atencion-2.jpg" alt="">
+<div class="imagen position-relative .uk-container-xsmall" id="Ganadores">
+<div  class="wave_cerrar_informativo2 wave_img" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.90,69.56 C200.00,-101.15 272.23,223.51 502.48,6.43 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #23A2B7 ;"></path></svg></div>
+<div  class="wave_cerrar_informativo3 wave_img" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.90,69.56 C200.00,-101.15 272.23,223.51 502.48,6.43 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #ffffff ;"></path></svg></div>
+<div class="centrar_ganadores">
+<div class="ganadores">
+  <a>Ganadores</a>
+</div>
+</div>
 </div>
 
 
 
-<div class="uk-position-relative uk-visible-toggle uk-light container probando2"  uk-slider="clsActivated: uk-transition-active; center: true">
+  <div style="height: 150px; overflow: hidden;" class="wave2 float-bottom" >
+    <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+      <path d="M0.00,49.98 C149.99,150.00 340.00,11.36 499.72,52.80 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: rgb(255, 255, 255);"></path>
+    </svg>
+  </div>
+</div>
 
-  <ul class="uk-slider-items imagenes_item uk-grid" style="transform: none;">
-      <li class="uk-width-3-4">
+
+<div class="uk-position-relative uk-visible-toggle uk-light container probando2" id="Videos"  uk-slider="clsActivated: uk-transition-active; center: true">
+
+  <ul class="uk-slider-items imagenes_item uk-grid" style="transform: none;" >
+      <li class="uk-width-3-4 video1" data-video-id="FHWAo1ae2e4">
           <div class="uk-panel">
               <img src="/img/aziz-acharki-549137-unsplash-1200x775.jpg"alt="">
               <div class="uk-overlay2 uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
@@ -231,7 +287,7 @@
               </div>
           </div>
       </li>
-      <li class="uk-width-3-4">
+      <li class="uk-width-3-4 video1" data-video-id="n3PhO67f524">
           <div class="uk-panel">
               <img src="/img/E5SQpjyX0AUaMRf.jpg" alt="">
               <div class="uk-overlay2 uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
@@ -240,7 +296,7 @@
               </div>
           </div>
       </li>
-      <li class="uk-width-3-4">
+      <li class="uk-width-3-4 video1" data-video-id="wUAsU2mYa8k">
           <div class="uk-panel">
               <img src="/img/Painting_Art_Back_view_Photographer_575380_3840x2400.jpg"lt="">
               <div class="uk-overlay2 uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
@@ -260,6 +316,27 @@
 <footer>
   <p>© 2021 Derechos Reservados Universidad Católica de Pereira - Centro de Innovación Educativa </p>
 </footer>
+
+
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
     
 
 <script src="/js/modal-video.js"></script>

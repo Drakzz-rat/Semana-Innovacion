@@ -1,3 +1,8 @@
+
+$("#Formulario").click(function(){
+  window.open("https://docs.google.com/forms/d/e/1FAIpQLSeTDBeDqkyciUoKd0xG-1wtVpFU7eI3mo2JMwzs1AlfmsljjA/viewform")
+});
+
 document.addEventListener('DOMContentLoaded', function() {
   
     var calendarEl = document.getElementById('calendar');
@@ -160,12 +165,10 @@ document.addEventListener('DOMContentLoaded', function() {
     day: 26, // required
     hours: 0, // Default is 0 [0-23] integer
     minutes: 0, // Default is 0 [0-59] integer
-    seconds: 0, // Default is 0 [0-59] integer
     words: { //words displayed into the countdown
         days: { singular: 'Día', plural: 'Días' },
         hours: { singular: 'Hora', plural: 'Horas' },
         minutes: { singular: 'Minuto', plural: 'Minutos' },
-        seconds: { singular: 'Segundo', plural: 'Segundos' }
     },
     plural: true, //use plurals
     inline: false, //set to true to get an inline basic countdown like : 24 days, 4 hours, 2 minutes, 5 seconds
@@ -197,4 +200,5 @@ $(function(){
     slideWidth: 600
   });
 });
+
 
