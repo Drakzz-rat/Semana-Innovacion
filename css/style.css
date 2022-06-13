@@ -1,49 +1,60 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap');
-@import url('http://fonts.cdnfonts.com/css/gotham');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap");
+@import url("http://fonts.cdnfonts.com/css/gotham");
 
-*{
-  font-family: 'Poppins', sans-serif;
+* {
+  font-family: "Poppins", sans-serif;
 }
 
-.inicio{
-  background: linear-gradient(to right, #2e95a7, #23A2B7, #23A2B7, #23A2B7, #2ba5bb, #2ba5bb, #2e95a7); 
+.inicio {
+  background: linear-gradient(
+    to right,
+    #2e95a7,
+    #23a2b7,
+    #23a2b7,
+    #23a2b7,
+    #2ba5bb,
+    #2ba5bb,
+    #2e95a7
+  );
 }
 
-.videos_talleristas_a{
+.videos_items{
+  height: 300px;
+  position: relative;
+}
+
+.videos_talleristas_a {
   position: relative;
   width: 100%;
 }
 
-.ganadores2{
+.ganadores2 {
   cursor: default;
   top: 0;
   color: white;
   margin-bottom: 20px;
   position: absolute;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   border: black;
   border-radius: 10px;
   padding: 10px;
   width: 50%;
   text-align: end;
   background-color: rgb(35, 162, 183, 0.7);
-  box-shadow: 5px 5px 5px  rgba(0,0,0,0.5);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   font-size: 20px;
   cursor: default;
 }
 
-
-
-
-.texto a{
+.texto a {
   font-size: 25px;
   color: #222;
 }
 
-.wave_links_1{
+.wave_links_1 {
   transform: rotate(180deg);
 }
-.programas_texto{
+.programas_texto {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -51,48 +62,47 @@
   color: white;
 }
 
-.programas_texto a{
-  font-family: 'Poppins', sans-serif;
+.programas_texto a {
+  font-family: "Poppins", sans-serif;
   font-size: 30px;
 }
 
-.informativo_programas{
+.informativo_programas {
   margin: 0;
-  background-color: #f3a463 ;
-  
+  background-color: #f3a463;
 }
 
-.modal_editar{
+.modal_editar {
   background-color: transparent;
   border-radius: 50%;
   border: none;
   color: white;
-  text-shadow: 0.5px 0.5px 0 black,  0.5px -0.5px black, -0.5px  0.5px 0 black, -0.5px -0.5px black;
+  text-shadow: 0.5px 0.5px 0 black, 0.5px -0.5px black, -0.5px 0.5px 0 black,
+    -0.5px -0.5px black;
 }
-
 
 .carousel_talleristas {
-  background-color: #23A2B7;
+  background-color: #23a2b7;
 }
 
-.carousel_talleristas h1{
-  font-family: 'Poppins', sans-serif;
+.carousel_talleristas h1 {
+  font-family: "Poppins", sans-serif;
 
   text-align: center;
   color: white;
   margin-bottom: 20px;
-  text-shadow: 0.5px 0.5px 0 black,  0.5px -0.5px black, -0.5px  0.5px 0 black, -0.5px -0.5px black;
+  text-shadow: 0.5px 0.5px 0 black, 0.5px -0.5px black, -0.5px 0.5px 0 black,
+    -0.5px -0.5px black;
 }
 
-.fondo_flecha{
+.fondo_flecha {
   background-color: rgb(0, 0, 0);
 }
 
-.modal-content button{
+.modal-content button {
   border: none;
-
 }
-.inscribete{
+.inscribete {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -100,119 +110,116 @@
   width: 100%;
 }
 
-.btn_inscribete{
-border: black;
-border-radius: 10px;
-width: 200px;
-padding: 20px;
-background-color: #23A2B7;
-color: white;
-font-weight: bold; 
-box-shadow: 5px 5px 5px  rgba(0,0,0,0.5);
-animation: shake 0.3s linear infinite both;
-font-size: 20px;
+.btn_inscribete {
+  border: black;
+  border-radius: 10px;
+  width: 200px;
+  padding: 20px;
+  background-color: #23a2b7;
+  color: white;
+  font-weight: bold;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  animation: shake 0.3s linear infinite both;
+  font-size: 20px;
 }
 
-.wave_cerrar_informativo{
- transform:  rotate(180deg);
+.wave_cerrar_informativo {
+  transform: rotate(180deg);
 }
 
-.btn_elegir{
+.btn_elegir {
   border: black;
   border-radius: 10px;
   padding: 10px;
-  background-color: #23A2B7;
+  background-color: #23a2b7;
   color: white;
-  font-weight: bold; 
-  box-shadow: 5px 5px 5px  rgba(0,0,0,0.5);
+  font-weight: bold;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   margin: 20px;
-  
-  }
+}
 
-@keyframes shake{
-  0%{
+@keyframes shake {
+  0% {
     transform: translate(0);
   }
-  20%{
+  20% {
     transform: translate(-2px, 2px);
   }
-  40%{
+  40% {
     transform: translate(2px, -2px);
   }
-  60%{
+  60% {
     transform: translate(2px, 2px);
   }
-  90%{
+  90% {
     transform: translate(2px, -2px);
   }
 }
 
-nav{
-  background-color: #23A2B7;
+nav {
+  background-color: #23a2b7;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  font-family: 'Poppins', sans-serif;}
+  font-family: "Poppins", sans-serif;
+}
 
-.encabezado{
+.encabezado {
   width: 100%;
   background-color: #fff;
 }
 
-#navbarNavAltMarkup a{
+#navbarNavAltMarkup a {
   color: white;
   margin-right: 20px;
 }
 
-.contador{
+.contador {
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
 }
 
-
-
-.img_nav{
+.img_nav {
   margin-left: 30px;
   float: right;
 }
 
-
-.seleccionar_calendar{
+.seleccionar_calendar {
   display: flex;
   justify-content: center;
 }
 
-.seleccionar_calendar button{
- margin: 10px;
+.seleccionar_calendar button {
+  margin: 10px;
 }
 
-.navbar{
-  display: flex;
-  justify-content: center;
-}
-
-.seleccionar_titulo{
+.navbar {
   display: flex;
   justify-content: center;
 }
 
-.collapse{
+.seleccionar_titulo {
   display: flex;
   justify-content: center;
 }
-.collapse{
+
+.collapse {
   display: flex;
   justify-content: center;
 }
-.navbar a{
+.collapse {
+  display: flex;
+  justify-content: center;
+}
+.navbar a {
   text-align: center;
   color: white;
   margin-left: 30px;
   font-size: 20px;
 }
 
-.navbar a:hover{
+.navbar a:hover {
   background-color: rgb(206, 149, 83);
   border-radius: 20px;
   opacity: 0.2;
@@ -220,19 +227,17 @@ nav{
 
 #loading {
   display: none;
- 
+
   position: absolute;
   top: 10px;
   right: 10px;
 }
 
-.calendarios_todos{
+.calendarios_todos {
   max-height: 450px;
 }
 
-
 #calendar {
-
   margin-top: 20px;
   max-width: 700px;
   max-height: 450px;
@@ -247,7 +252,7 @@ nav{
   margin-bottom: 20px;
 }
 
-#calendar2{
+#calendar2 {
   visibility: hidden;
   margin-top: 20px;
   max-width: 700px;
@@ -255,41 +260,34 @@ nav{
   margin-bottom: 20px;
 }
 
-
-.calendario a{
-  color: #23A2B7;
-
+.calendario a {
+  color: #23a2b7;
 }
 
-.fc-daygrid-event-harness{
+.fc-daygrid-event-harness {
   background-color: rgb(45, 126, 45, 0.3);
   border-radius: 10px;
   color: white;
 }
 
-
-
-.gif_deslizar{
+.gif_deslizar {
   position: absolute;
   bottom: 0;
 }
 
-.boton svg{
+.boton svg {
   color: #222;
 }
 
-
-.boton svg:hover{
-  transition:all 0.6s ease;
+.boton svg:hover {
+  transition: all 0.6s ease;
 }
-
-
-
 
 .simply-countdown {
   overflow: hidden;
   display: table;
-  font-family: 'Poppins', sans-serif;}
+  font-family: "Poppins", sans-serif;
+}
 
 .simply-countdown > .simply-section {
   width: 150px;
@@ -321,9 +319,8 @@ nav{
   text-align: center;
 }
 
-.informacionparticipantes{
-  background-color: #23A2B7;
-
+.informacionparticipantes {
+  background-color: #23a2b7;
 }
 
 .slider label {
@@ -336,23 +333,22 @@ nav{
   height: 300px;
   cursor: pointer;
   margin: 10px;
-  
 }
 
-.wave_cerrar_informativo2{
+.wave_cerrar_informativo2 {
   position: absolute;
   transform: rotate(180deg);
   width: 100%;
 }
 
-.wave_cerrar_informativo3{
+.wave_cerrar_informativo3 {
   position: absolute;
   width: 100%;
   bottom: 0;
   fill: white;
 }
 
-.card {
+.carousel_talleristas .card {
   position: relative;
   width: 240px;
   height: 340px;
@@ -361,104 +357,118 @@ nav{
   -webkit-transition: all 600ms;
   transition: all 600ms;
   border: none;
-  background-color: #23A2B7;
+  background-color: #23a2b7;
 }
 
-  .card div {
-      position: absolute;
-      -webkit-backface-visibility: hidden;
-      backface-visibility: hidden;
-      max-width: 240px;
-  }
-
-  .card img{
-    border-top-left-radius: 10%;
-    border-top-right-radius: 10%;
-  }
-
-  .slider h3{
-    color: rgb(255, 255, 255);
-    text-align: center;
-    font-size: 20px;
-    margin: 10px;
+.carousel_talleristas .card div {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  max-width: 240px;
 }
 
-.card div p{
+.carousel_talleristas .card img {
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+}
+
+.slider h3 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 20px;
+  margin: 10px;
+}
+
+.carousel_talleristas .card div p {
   color: white;
   text-align: start;
   font-size: 16px;
   margin-left: 10px;
 }
 
-  .card .back {
-      background: #222;
-      color: #FFF;
-      -webkit-transform: rotateX(180deg);
-      transform: rotateX(180deg);
-      width: 240px;
-      height: 340px;
-  }
+.carousel_talleristas .card .back {
+  background: #222;
+  color: #fff;
+  -webkit-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+  width: 240px;
+  height: 340px;
+}
 
-  .uk-child-width-1{
-    display: none;
-  }
+.uk-child-width-1 {
+  display: none;
+}
 .slider label:hover .card {
-  box-shadow: 0 20px 20px rgba(50,50,50,.2);
+  box-shadow: 0 20px 20px rgba(50, 50, 50, 0.2);
 }
 
 .uk-slider input {
   display: none;
-  
 }
 
-:checked + .card {
+.carousel_talleristas :checked + .card {
   transform: rotateX(180deg);
   -webkit-transform: rotateX(180deg);
 }
 
 .tarjeta label:hover :checked + .card {
-  box-shadow: 0 20px 20px rgba(255,255,255,.2);
+  box-shadow: 0 20px 20px rgba(255, 255, 255, 0.2);
 }
 
-footer{
+footer {
   display: flex;
   justify-content: center;
-  background-color: #23A2B7;
+  background-color: #23a2b7;
 }
 
-footer p{
+footer p {
   color: rgb(20, 20, 20);
   margin: 10px;
 }
 
-.informacion img{
+.informacion img {
   width: 100%;
   height: 100%;
   padding: 10px;
 }
 
+.atencion_usuario {
+  display: flex;
+  text-align: center;
+  width: 100%;
+}
+
+.atencion_item {
+  width: 100%;
+}
+
 .enlace {
-  display:flex;
+  display: flex;
   align-items: center;
-  border:0;
-  padding:20;
-  margin:0;
-  text-decoration:underline;
-  background:cadetblue;
+  border: 0;
+  padding: 20;
+  margin: 0;
+  text-decoration: underline;
+  background: cadetblue;
   font-family: arial, sans-serif;
   font-size: 1em;
-  line-height:1em;
+  line-height: 1em;
   color: wheat;
 }
 
 .enlace:hover {
-  text-decoration:none;
-  color:#43438d;
-  cursor:pointer;
+  text-decoration: none;
+  color: #43438d;
+  cursor: pointer;
   background-color: #222;
 }
+.atencion_item h1 {
+  text-shadow: 0.5px 0.5px 0 black, 0.5px -0.5px black, -0.5px 0.5px 0 black,
+    -0.5px -0.5px black;
+  color: #ff8308;
+}
 
-#nombres{
+#nombres {
   width: 100%;
   background-color: #222;
   color: white;
@@ -468,17 +478,18 @@ footer p{
   text-align: center;
 }
 
-.uk-child-width-1{
+.uk-child-width-1 {
   display: flex;
   align-items: center;
   text-align: center;
 }
 
-.talleristas_items{
+.talleristas_items {
   height: 400px;
 }
 
-.boton_persona{
+
+.boton_persona {
   background-color: #ff8308;
   padding: 5px;
   width: 100%;
@@ -489,59 +500,61 @@ footer p{
   color: white;
 }
 
-.botones_color a{
-padding: 10px;
-background-color: white;
+.botones_color a {
+  padding: 10px;
+  background-color: white;
 }
 
-#prueba{
+#prueba {
   margin-bottom: 30px;
 }
-  
 
-.uk-panel img{
-  width: 100%;
-  height: 370px;
-}
 
-.links_siem{
-  display: flex;
+
+.links_siem {
   text-align: center;
   align-items: center;
   justify-content: center;
-  height: 500px;
 }
 
-.links_siem p{
-  font-family: 'Poppins', sans-serif;
+.links_siem p {
+  font-family: "Poppins", sans-serif;
   text-align: justify;
   text-align: center;
 }
 
-.formatos button{
+.formatos {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.formatos a {
   margin: 40px;
-  background-color: #23A2B7;
+  background-color: #23a2b7;
   border: none;
   border-radius: 10px;
   padding: 10px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.24);
   color: white;
-  font-family: 'Poppins', sans-serif;
-}
-.link-siem h1{
-  font-family: 'Poppins', sans-serif;
-  color: #ff8308;
-  text-shadow: 0.5px 0.5px 0 black,  0.5px -0.5px black, -0.5px  0.5px 0 black, -0.5px -0.5px black;
+  font-family: "Poppins", sans-serif;
 }
 
-.boton_mover svg{
+.link-siem h1 {
+  font-family: "Poppins", sans-serif;
+  color: #ff8308;
+  text-shadow: 0.5px 0.5px 0 black, 0.5px -0.5px black, -0.5px 0.5px 0 black,
+    -0.5px -0.5px black;
+}
+
+.boton_mover svg {
   color: white;
   background-color: black;
   width: 30px;
   height: 30px;
   border-radius: 50px;
 }
-.boton_video{
+.boton_video {
   background-color: #ff8308;
   padding: 5px;
   width: 50%;
@@ -552,49 +565,68 @@ background-color: white;
   color: white;
 }
 
-.texto{
+.texto {
   text-align: center;
   margin-top: 20px;
-  
 }
 
-.col{
+.col {
   display: flex;
   text-align: center;
   align-items: center;
   justify-content: center;
 }
 
-.primero{
+.primero {
   height: 200px;
   width: 200px;
 }
 
-.modal_{
+
+
+.videos_items .card  {
+  position: relative;
+  width: 400px; 
+  height: 240px;
+  border: none;
+  background-color: #000000;
+  overflow: hidden;
+}
+
+.videos_items .card div {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+
+.videos_items img{
+  width: 400px !important;
+  height: 250px;
+  max-width: 10000px !important;
+}
+
+.modal_ {
   height: 100%;
   width: 100%;
 }
 
-.informativo_programas input{
+.informativo_programas input {
   visibility: hidden;
-
 }
 
-.informativo_programas img{
+.informativo_programas img {
   height: 70%;
   width: 70%;
 }
 
-
-
-.texto span{
-  
-  font-family: 'Poppins', sans-serif;
-    color: #FF8308;
+.texto span {
+  font-family: "Poppins", sans-serif;
+  color: #ff8308;
   font-size: 50px;
 }
 
-.imagenes_item img{
+.imagenes_item img {
   border-radius: 50px;
 }
 
@@ -603,57 +635,81 @@ background-color: white;
   border-bottom-right-radius: 50px;
 }
 
-.simply-countdown > .simply-section{
+.simply-countdown > .simply-section {
   border-radius: 10px;
-  box-shadow: 0px 5px 5px 2px rgb(0 0 0 / 12%),  0px 5px 5px 2px rgb(0 0 0 / 24%);
+  box-shadow: 0px 5px 5px 2px rgb(0 0 0 / 12%), 0px 5px 5px 2px rgb(0 0 0 / 24%);
 }
 
-.simply-countdown .simply-word{
-  color: #23A2B7;
+.simply-countdown .simply-word {
+  color: #23a2b7;
 }
 
-.simply-countdown .simply-amount{
+.simply-countdown .simply-amount {
   color: #d3811e;
   font-size: 30px;
 }
 
-.imagen{
+.imagen {
   position: relative;
-  background-image: url(/img/7Z8A2847\ \(1\).JPG);
+  background-image: url(/img/ganadores.jpg);
   height: 100vh;
   width: 100%;
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
-
-.ganadores{
+.ganadores {
   color: rgb(255, 255, 255);
 }
 
-
-
-.ganadores a{
-margin-top: 20px;
-position: absolute;
-font-family: 'Poppins', sans-serif;
-border: black;
-border-radius: 10px;
-padding: 10px;
-width: 50%;
-text-align: end;
-background-color: rgb(35, 162, 183, 0.7);
-box-shadow: 5px 5px 5px  rgba(0,0,0,0.5);
-font-size: 20px;
-cursor: default;
+.contenedor_genially {
+  height: 400px;
+  width: 100%;
 }
 
+div .genially-embed {
+  height: 100% !important;
+  background-color: #23a2b7;
+}
 
-@media (max-width:400px){
-  .imagen{
+.genially-embed .genially-view-navigation-actions-toggle-button {
+  display: none;
+}
+
+.wave_genially_cerrar {
+  transform: rotate(180deg);
+}
+
+.ganadores a {
+  position: absolute;
+  font-family: "Poppins", sans-serif;
+  border: black;
+  border-radius: 10px;
+  padding: 10px;
+  width: 50%;
+  text-align: end;
+  background-color: rgb(35, 162, 183, 0.7);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  font-size: 20px;
+  cursor: default;
+}
+
+@media (max-width: 400px) {
+  .imagen {
     position: relative;
-    background-image: url(/img/IMG_0319.JPG);
-    height: 70vh;
+    background-image: url(/img/ganadores.jpg);
+    height: 60vh;
+    width: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 400px) {
+  .imagen {
+    position: relative;
+    background-image: url(/img/ganadores.jpg);
+    height: 60vh;
     width: 100%;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -666,32 +722,32 @@ cursor: default;
   right: 0px;
   z-index: 99999;
 }
-.wave{
+.wave {
   transform: rotate(180deg);
 }
 
-.wave2{
+.wave2 {
   bottom: 0px;
   position: absolute;
   width: 100%;
 }
 
-@media (max-width:400px){
 
-  .imagenes_item img{
+@media (max-width: 400px) {
+  .imagenes_item img {
     border-radius: 50px;
     height: 200px;
-  };
+  }
 
-  .uk-overlay2{
+  .uk-overlay2 {
     padding: 3px 3px;
-  };
+  }
 }
 
 @media (min-width: 800px) and (max-width: 1500px) {
-  .uk-overlay2{
+  .uk-overlay2 {
     padding: 30px 30px;
-  };
-  };
+  }
+} ;
 
-  
+
