@@ -163,7 +163,7 @@ simplyCountdown(".simply-countdown", {
   year: 2022, // required
   month: 7, // required
   day: 26, // required
-  hours: 0, // Default is 0 [0-23] integer
+  hours: 8, // Default is 0 [0-23] integer
   minutes: 0, // Default is 0 [0-59] integer
   words: {
     //words displayed into the countdown
