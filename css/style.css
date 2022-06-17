@@ -2,9 +2,53 @@
 @import url("http://fonts.cdnfonts.com/css/gotham");
 
 * {
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif !important;
 }
 
+.elementos_redes {
+  position: fixed;
+  top: 30%;
+  right: 0;
+  flex-direction: column;
+}
+
+.bi-instagram:hover {
+  color: #d6249f;
+}
+
+.bi-youtube:hover {
+  color: #ff0044;
+}
+
+.bi-whatsapp:hover {
+  color: green;
+}
+
+.elementos_redes a {
+  display: block;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: #ff8308;
+  margin-right: 10px;
+  text-shadow: 2px 2px 0px #000000;
+}
+
+#titulo {
+  color: #d3811e;
+  text-shadow: 2px 2px 0px #000000;
+  font-weight: 600;
+}
+
+.fc-toolbar-title {
+  color: #000000;
+  font-weight: bold;
+}
+
+.fc-toolbar-title:first-letter {
+  text-transform: uppercase;
+}
 .inicio {
   background: linear-gradient(
     to right,
@@ -18,7 +62,7 @@
   );
 }
 
-.videos_items{
+.videos_items {
   height: 300px;
   position: relative;
 }
@@ -48,7 +92,6 @@
 
 .texto a {
   font-size: 25px;
-  color: #222;
 }
 
 .wave_links_1 {
@@ -67,22 +110,71 @@
   font-size: 30px;
 }
 
-.informativo_programas {
-  margin: 0;
-  background-color: #f3a463;
+.container-programas {
+  min-width: 100%;
+}
+
+@media (min-width: 800px) and (max-width: 1500px) {
+  .informativo_programas {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-template-columns: 25% 25% 25% 25%;
+    background-color: #ff9c64;
+    justify-items: center;
+  }
+}
+
+@media (min-width: 250px) and (max-width: 450px) {
+  .informativo_programas {
+    width: 100%;
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    grid-template-columns: 50% 50%;
+    background-color: #ff9c64;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 799px) {
+  .informativo_programas {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    grid-template-columns: 50% 50%;
+    background-color: #ff9c64;
+  }
+
+  .uk-position-center-right-out {
+    left: 95% !important;
+    width: max-content;
+  }
+
+  .uk-position-center-left-out {
+    right: 95% !important;
+
+    width: max-content;
+  }
+}
+
+.modal_editar label {
+  width: 100%;
 }
 
 .modal_editar {
+  width: 100%;
+  padding: 0;
   background-color: transparent;
   border-radius: 50%;
   border: none;
   color: white;
-  text-shadow: 0.5px 0.5px 0 black, 0.5px -0.5px black, -0.5px 0.5px 0 black,
-    -0.5px -0.5px black;
+  text-shadow: 2px 2px 0px #000000;
 }
 
 .carousel_talleristas {
-  background-color: #23a2b7;
+  background-color: #2596be;
 }
 
 .carousel_talleristas h1 {
@@ -91,8 +183,7 @@
   text-align: center;
   color: white;
   margin-bottom: 20px;
-  text-shadow: 0.5px 0.5px 0 black, 0.5px -0.5px black, -0.5px 0.5px 0 black,
-    -0.5px -0.5px black;
+  text-shadow: 2px 2px 0px #000000;
 }
 
 .fondo_flecha {
@@ -123,6 +214,10 @@
   font-size: 20px;
 }
 
+.genially-embed .genially-view-menu-action {
+  display: none !important;
+}
+
 .wave_cerrar_informativo {
   transform: rotate(180deg);
 }
@@ -135,7 +230,6 @@
   color: white;
   font-weight: bold;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-  margin: 20px;
 }
 
 @keyframes shake {
@@ -157,10 +251,43 @@
 }
 
 nav {
-  background-color: #23a2b7;
+  background-color: #0894ac;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   font-family: "Poppins", sans-serif;
+}
+
+.ganadores ul {
+  transition: none !important;
+}
+
+@media (min-width: 800px) and (max-width: 1500px) {
+  .ganadores .uk-panel {
+    height: 75vh;
+    margin-top: 20px;
+  }
+
+  .ganadores .uk-width-3-4 {
+    width: 100% !important;
+    height: auto;
+  }
+}
+
+@media (min-width: 250px) and (max-width: 450px) {
+  .ganadores .uk-panel {
+    margin-top: 20px;
+    height: auto;
+  }
+
+  .ganadores .uk-width-3-4 {
+    width: 100% !important;
+    height: auto;
+  }
+}
+
+.ganadores img {
+  height: 100%;
+  width: 100%;
 }
 
 .encabezado {
@@ -185,9 +312,23 @@ nav {
   float: right;
 }
 
-.seleccionar_calendar {
-  display: flex;
-  justify-content: center;
+@media (min-width: 250px) and (max-width: 450px) {
+  .seleccionar_calendar {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 451px) and (max-width: 1500px) {
+  .seleccionar_calendar {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
 }
 
 .seleccionar_calendar button {
@@ -196,12 +337,27 @@ nav {
 
 .navbar {
   display: flex;
-  justify-content: center;
 }
 
 .seleccionar_titulo {
   display: flex;
   justify-content: center;
+}
+
+.list-group img {
+  height: 100px;
+}
+
+.list-group {
+  font-size: 20px;
+}
+
+.list-group-item {
+  border: none;
+}
+
+.card {
+  border: none;
 }
 
 .collapse {
@@ -215,13 +371,15 @@ nav {
 .navbar a {
   text-align: center;
   color: white;
-  margin-left: 30px;
   font-size: 20px;
 }
 
+.boton_nav {
+  display: flex;
+}
+
 .navbar a:hover {
-  background-color: rgb(206, 149, 83);
-  border-radius: 20px;
+  text-decoration: none;
   opacity: 0.2;
 }
 
@@ -289,29 +447,66 @@ nav {
   font-family: "Poppins", sans-serif;
 }
 
-.simply-countdown > .simply-section {
-  width: 150px;
-  height: 150px;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -moz-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -moz-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  float: left;
-  margin: 15px;
-  font-size: 20px;
-  background: #fff;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+#programas_titulo {
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 0px #000000;
+  background-color: #ff9c64;
+  height: auto;
+  margin: 0;
+}
+@media (min-width: 250px) and (max-width: 450px) {
+  .simply-countdown > .simply-section {
+    width: 130px;
+    height: 130px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    float: left;
+    margin: 15px;
+    font-size: 20px;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  }
+}
+
+@media (min-width: 451px) and (max-width: 1500px) {
+  .simply-countdown > .simply-section {
+    width: 150px;
+    height: 150px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    float: left;
+    margin: 15px;
+    font-size: 20px;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  }
 }
 .simply-countdown > .simply-section .simply-amount,
 .simply-countdown > .simply-section .simply-word {
@@ -346,6 +541,17 @@ nav {
   width: 100%;
   bottom: 0;
   fill: white;
+}
+
+.carousel_talleristas .front {
+  -webkit-border-top-left-radius: 10%;
+  -webkit-border-top-right-radius: 10%;
+  -moz-border-radius: 10%;
+
+  /* box-shadow */
+  -webkit-box-shadow: rgba(18, 16, 16, 0.8) 0px 0 10px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.8) 0 0 10px;
+  box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.12), 0 5px 10px rgba(0, 0, 0, 0.24);
 }
 
 .carousel_talleristas .card {
@@ -392,7 +598,9 @@ nav {
   -webkit-transform: rotateX(180deg);
   transform: rotateX(180deg);
   width: 240px;
-  height: 340px;
+  height: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .uk-child-width-1 {
@@ -418,11 +626,11 @@ nav {
 footer {
   display: flex;
   justify-content: center;
-  background-color: #23a2b7;
+  background-color: #2596be;
 }
 
 footer p {
-  color: rgb(20, 20, 20);
+  color: rgb(255, 255, 255);
   margin: 10px;
 }
 
@@ -440,6 +648,11 @@ footer p {
 
 .atencion_item {
   width: 100%;
+}
+
+.atencion_item p {
+  font-size: 1.3em;
+  color: #4d4d4d;
 }
 
 .enlace {
@@ -463,8 +676,7 @@ footer p {
   background-color: #222;
 }
 .atencion_item h1 {
-  text-shadow: 0.5px 0.5px 0 black, 0.5px -0.5px black, -0.5px 0.5px 0 black,
-    -0.5px -0.5px black;
+  text-shadow: 2px 2px 0px #000000;
   color: #ff8308;
 }
 
@@ -488,7 +700,6 @@ footer p {
   height: 400px;
 }
 
-
 .boton_persona {
   background-color: #ff8308;
   padding: 5px;
@@ -497,6 +708,16 @@ footer p {
   border: none;
   font-size: 20px;
   font-weight: bold;
+  color: white;
+}
+
+.boton_cargo {
+  background-color: #ff8308;
+  padding: 5px;
+  width: 100%;
+  height: 30px;
+  border: none;
+  font-size: 10px;
   color: white;
 }
 
@@ -516,9 +737,7 @@ footer p {
 }
 
 .links_siem p {
-  font-family: "Poppins", sans-serif;
-  text-align: justify;
-  text-align: center;
+  text-align: left;
 }
 
 .formatos {
@@ -541,8 +760,7 @@ footer p {
 .link-siem h1 {
   font-family: "Poppins", sans-serif;
   color: #ff8308;
-  text-shadow: 0.5px 0.5px 0 black, 0.5px -0.5px black, -0.5px 0.5px 0 black,
-    -0.5px -0.5px black;
+  text-shadow: 2px 2px 0px #000000;
 }
 
 .boton_mover svg {
@@ -564,8 +782,14 @@ footer p {
 }
 
 .texto {
+  margin-top: 20px;
+  text-align: center;
+  color: #6f6a6a;
+}
+.texto span {
   text-align: center;
   margin-top: 20px;
+  text-shadow: 2px 2px 0px #000000;
 }
 
 .col {
@@ -575,16 +799,23 @@ footer p {
   justify-content: center;
 }
 
-.primero {
-  height: 200px;
-  width: 200px;
+@media (min-width: 250px) and (max-width: 450px) {
+  .primero {
+    height: 175px;
+    width: 175px;
+  }
 }
 
+@media (min-width: 451px) and (max-width: 1500px) {
+  .primero {
+    height: 200px;
+    width: 200px;
+  }
+}
 
-
-.videos_items .card  {
+.videos_items .card {
   position: relative;
-  width: 400px; 
+  width: 350px;
   height: 240px;
   border: none;
   background-color: #000000;
@@ -597,11 +828,9 @@ footer p {
   backface-visibility: hidden;
 }
 
-
-.videos_items img{
-  width: 400px !important;
+.videos_items img {
   height: 250px;
-  max-width: 10000px !important;
+  max-width: auto;
 }
 
 .modal_ {
@@ -609,13 +838,21 @@ footer p {
   width: 100%;
 }
 
+.texto a {
+  font-weight: 600;
+}
+
 .informativo_programas input {
   visibility: hidden;
 }
 
 .informativo_programas img {
+  margin-bottom: 20px;
   height: 70%;
   width: 70%;
+  box-shadow: rgba(0, 0, 0, 0.48) 1px 2px 5px 0px,
+    rgba(0, 0, 0, 0.8) -1px -2px 5px 0px;
+  border-radius: 50%;
 }
 
 .texto span {
@@ -639,25 +876,30 @@ footer p {
 }
 
 .simply-countdown .simply-word {
-  color: #23a2b7;
+  color: #2596be;
+  font-size: 15px;
+}
+@media (min-width: 250px) and (max-width: 450px) {
+  .simply-countdown .simply-amount {
+    font-weight: 400 !important;
+    color: #d3811e;
+    font-size: 50px;
+  }
 }
 
-.simply-countdown .simply-amount {
-  color: #d3811e;
-  font-size: 30px;
+@media (min-width: 451px) and (max-width: 1500px) {
+  .simply-countdown .simply-amount {
+    font-weight: 400 !important;
+    color: #d3811e;
+    font-size: 60px;
+  }
 }
 
-.imagen {
-  position: relative;
-  background-image: url(/img/ganadores.jpg);
-  height: 100vh;
-  width: 100%;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-}
-
-.ganadores {
+.experiencia_ganadores {
+  font-size: 1.3em;
+  font-weight: bold;
   color: rgb(255, 255, 255);
+  text-shadow: none !important;
 }
 
 .contenedor_genially {
@@ -667,51 +909,52 @@ footer p {
 
 div .genially-embed {
   height: 100% !important;
-  background-color: #23a2b7;
+  background-color: #2596be;
 }
 
 .genially-embed .genially-view-navigation-actions-toggle-button {
   display: none;
 }
 
+.uk-dotnav > .uk-active > * {
+  background-color: #d3811e !important;
+}
 .wave_genially_cerrar {
   transform: rotate(180deg);
 }
 
-.ganadores a {
-  position: absolute;
-  font-family: "Poppins", sans-serif;
-  border: black;
-  border-radius: 10px;
-  padding: 10px;
-  width: 50%;
-  text-align: end;
-  background-color: rgb(35, 162, 183, 0.7);
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-  font-size: 20px;
-  cursor: default;
-}
-
-@media (max-width: 400px) {
-  .imagen {
-    position: relative;
-    background-image: url(/img/ganadores.jpg);
-    height: 60vh;
-    width: 100%;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+@media (min-width: 800px) and (max-width: 1500px) {
+  .container-texto {
+    font-family: "Poppins", sans-serif;
+    border: black;
+    border-radius: 10px;
+    padding: 10px;
+    width: 60%;
+    text-align: end;
+    background-color: rgb(35, 162, 183, 0.7);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+    cursor: default;
   }
 }
 
-@media (max-width: 400px) {
-  .imagen {
-    position: relative;
-    background-image: url(/img/ganadores.jpg);
-    height: 60vh;
-    width: 100%;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+@media (min-width: 250px) and (max-width: 450px) {
+  .container-texto {
+    font-family: "Poppins", sans-serif;
+    border: black;
+    border-radius: 10px;
+    padding: 10px;
+    width: 70%;
+    text-align: end;
+    background-color: rgb(35, 162, 183, 0.7);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    font-size: 15px;
+    cursor: default;
   }
+}
+
+.videos_talleristas_a .card {
+  box-shadow: 0px 5px 5px 2px rgb(0 0 0 / 12%), 0px 5px 5px 2px rgb(0 0 0 / 24%);
 }
 
 #icon_wrapper {
@@ -730,7 +973,6 @@ div .genially-embed {
   width: 100%;
 }
 
-
 @media (max-width: 400px) {
   .imagenes_item img {
     border-radius: 50px;
@@ -747,5 +989,3 @@ div .genially-embed {
     padding: 30px 30px;
   }
 } ;
-
-

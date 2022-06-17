@@ -2,6 +2,7 @@ $("#Formulario").click(function () {
   window.open(
     "https://docs.google.com/forms/d/e/1FAIpQLSeTDBeDqkyciUoKd0xG-1wtVpFU7eI3mo2JMwzs1AlfmsljjA/viewform"
   );
+  $("#Formulario").css("animation", "none");
 });
 
 document.addEventListener("DOMContentLoaded", function () {
