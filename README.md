@@ -18,11 +18,8 @@ Framework de Videos-Modales<br>
 Contador<br>
 Full Calendar<br>
 
-<strong> Ultimo Cambio el 17 de Junio del 2022<strong>
+<strong> Ultimo Cambio el 17 de Junio del 2022<strong><br>
   https://www.ucp.edu.co/
 
-
-
 <h3> Pagina de Pruebas <h3>
- <p> https://aaaaaaa332343534.000webhostapp.com/<p>
-  
+ https://aaaaaaa332343534.000webhostapp.com/
