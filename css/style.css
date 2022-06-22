@@ -237,7 +237,7 @@ footer p {
 
 .atencion_usuario {
   position: relative;
-  background-image: url(/img/Recursos/Atención\ al\ usuario.png);
+  background-image: url(/img/Miniaturas/ganadores.jpg);
   background-size: 100% 100%;
   display: flex;
   text-align: center;
@@ -329,7 +329,7 @@ footer p {
 }
 
 .contenedor_genially {
-  height: 400px;
+  height: 500px;
   width: 100%;
 }
 
@@ -397,6 +397,7 @@ div .genially-embed {
 
 .boton_nav {
   display: flex;
+  margin-right: 10px;
 }
 
 .navbar a:hover {
@@ -980,6 +981,11 @@ nav {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.24);
   color: white;
   font-family: "Poppins", sans-serif;
+  text-decoration: none !important;
+}
+
+.formatosDownload a:hover{
+  color: white !important;
 }
 
 /* ---------------------------------------------------------------
