@@ -6,7 +6,6 @@ $("#Formulario").click(function () {
 });
 
 
-
 function cambiarcolor(){
   
 let icon = document.getElementById("instagram")
@@ -32,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var calendarEl = document.getElementById("calendar");
   var calendar = new FullCalendar.Calendar(calendarEl, {
     headerToolbar: {
-      left: "prev next",
+      left: "",
       center: "title",
       right: "dayGridMonth,listYear",
     },
@@ -74,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   var calendar = new FullCalendar.Calendar(calendarEl, {
     headerToolbar: {
-      left: "prev next",
+      left: "",
       center: `title`,
       right: "dayGridMonth,listYear",
     },
@@ -116,7 +115,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   var calendar = new FullCalendar.Calendar(calendarEl, {
     headerToolbar: {
-      left: "prev next",
+      left: "",
       center: "title",
       right: "dayGridMonth,listYear",
     },
