@@ -5,12 +5,34 @@ $("#Formulario").click(function () {
   $("#Formulario").css("animation", "none");
 });
 
+
+
+function cambiarcolor(){
+  
+let icon = document.getElementById("instagram")
+let container = document.getElementById("programas_container")
+let styles = document.getElementsByClassName("elementos_redes")
+
+let rect = container.getBoundingClientRect();
+let rect2 = icon.getBoundingClientRect();
+
+  if (rect.y < 400 && rect.y > -170){
+    $("#elementos_redes a").css("color", "white")
+  }else{
+    $("#elementos_redes a").css("color", "#ff8308")
+  }
+}
+
+setInterval(cambiarcolor, 1000)
+
+
+
+
 document.addEventListener("DOMContentLoaded", function () {
   var calendarEl = document.getElementById("calendar");
-  var titulo = "Perro";
   var calendar = new FullCalendar.Calendar(calendarEl, {
     headerToolbar: {
-      left: "",
+      left: "prev next",
       center: "title",
       right: "dayGridMonth,listYear",
     },
@@ -21,10 +43,10 @@ document.addEventListener("DOMContentLoaded", function () {
     // THIS KEY WON'T WORK IN PRODUCTION!!!
     // To make your own Google API key, follow the directions here:
     // http://fullcalendar.io/docs/google_calendar/
-    googleCalendarApiKey: "AIzaSyBv9XRlqzbNg_tBkjDKUbDS6d36yJiWmtQ",
+    googleCalendarApiKey: "AIzaSyA4GEOsoYb8pXnfbah3oRRlbmOmTL85vFU",
 
     // US Holidays
-    events: "cbrtldlj2hi9u11dg27bd5e93c@group.calendar.google.com",
+    events: "es.co#holiday@group.v.calendar.google.com",
 
     eventClick: function (arg) {
       // opens events in a popup window
@@ -52,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   var calendar = new FullCalendar.Calendar(calendarEl, {
     headerToolbar: {
-      left: "",
+      left: "prev next",
       center: `title`,
       right: "dayGridMonth,listYear",
     },
@@ -63,10 +85,10 @@ document.addEventListener("DOMContentLoaded", function () {
     // THIS KEY WON'T WORK IN PRODUCTION!!!
     // To make your own Google API key, follow the directions here:
     // http://fullcalendar.io/docs/google_calendar/
-    googleCalendarApiKey: "AIzaSyBv9XRlqzbNg_tBkjDKUbDS6d36yJiWmtQ",
+    googleCalendarApiKey: "AIzaSyA4GEOsoYb8pXnfbah3oRRlbmOmTL85vFU",
 
     // US Holidays
-    events: "cbrtldlj2hi9u11dg27bd5e93c@group.calendar.google.com",
+    events: "es.co#holiday@group.v.calendar.google.com",
 
     eventClick: function (arg) {
       // opens events in a popup window
@@ -94,7 +116,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   var calendar = new FullCalendar.Calendar(calendarEl, {
     headerToolbar: {
-      left: "",
+      left: "prev next",
       center: "title",
       right: "dayGridMonth,listYear",
     },
@@ -105,10 +127,10 @@ document.addEventListener("DOMContentLoaded", function () {
     // THIS KEY WON'T WORK IN PRODUCTION!!!
     // To make your own Google API key, follow the directions here:
     // http://fullcalendar.io/docs/google_calendar/
-    googleCalendarApiKey: "AIzaSyBv9XRlqzbNg_tBkjDKUbDS6d36yJiWmtQ",
+    googleCalendarApiKey: "AIzaSyA4GEOsoYb8pXnfbah3oRRlbmOmTL85vFU",
 
     // US Holidays
-    events: "cbrtldlj2hi9u11dg27bd5e93c@group.calendar.google.com",
+    events: "es.co#holiday@group.v.calendar.google.com",
 
     eventClick: function (arg) {
       // opens events in a popup window
