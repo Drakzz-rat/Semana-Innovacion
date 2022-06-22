@@ -36,15 +36,12 @@
   </div>
 </nav>
 
-
-
-
-<div class="container texto" id="Inicio">
+<div class="container textoInicio" id="Inicio">
   <span>Semana de la Innovación<br> Educativa</span><br>
   <a>26 al 29 de Julio del 2022</a>
 </div>
 
-<div class="contador container">
+<div class="contadorContainer container">
   <div class="simply-countdown">
   </div>
 </div>
@@ -55,13 +52,12 @@
   </div>
 </div>
 
-
-
-<div class="container-programas">
+<div class="containerProgramas">
 <div  id="Programas" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.90,69.56 C200.00,-101.15 272.23,223.51 502.48,6.43 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #ff9c64  ;"></path></svg></div>
   <h1 id="programas_titulo">Categorías</h1>
-  <div class="informativo_programas">
-    <div class="programa_container_individual">
+  <p class="card-text textProgramas"><small class="text-muted">Puedes presionar la imagen para ver mas informacion</small></p>
+  <div class="informativo_programas" id="programas_container">
+    <div class="containerItemPrograma">
       <button  class="modal_editar" type="button" data-toggle="modal" data-target="#exampleModalCenter">
       <label>
       <input type="checkbox" />
@@ -75,7 +71,7 @@
   </button>
   </div>
 
-    <div class="programa_container_individual">
+    <div class="containerItemPrograma">
       <button  class="modal_editar" type="button" data-toggle="modal" data-target="#exampleModalCenter">
       <label>
         <input type="checkbox" />
@@ -89,7 +85,7 @@
     </button>
     </div>
 
-    <div class="programa_container_individual">
+    <div class="containerItemPrograma">
       <button  class="modal_editar" type="button" data-toggle="modal" data-target="#exampleModalCenter">
       <label>
         <input type="checkbox" />
@@ -103,7 +99,7 @@
     </button>
     </div>
 
-    <div class="programa_container_individual">
+    <div class="containerItemPrograma">
       <button  class="modal_editar" type="button" data-toggle="modal" data-target="#exampleModalCenter">
       <label>
         <input type="checkbox" />
@@ -120,22 +116,20 @@
 <div class="wave_cerrar_informativo" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.90,69.56 C200.00,-101.15 272.23,223.51 502.48,6.43 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #ff9c64 ;"></path></svg></div>
 </div>
 
-
-<div class="container seleccionar_calendar">
+<div class="container btnCalendarios">
   <button type="button" onclick="calendario1()" class=" btn_elegir">Profesores</button>
   <button type="button" onclick="calendario2()" class=" btn_elegir">Administrativo</button>
   <button type="button" onclick="calendario3()" class=" btn_elegir">Estudiantes</button>
 </div>
 
-<div class="container seleccionar_titulo" id="Calendarios">
+<div class="container tituloCalendario" id="Calendarios">
   <h2 id="titulo"> Estudiantes </h2>
 </div>
 
 <div id='loading'>
 </div>
 
-
-<div data-aos="fade-up" data-aos-duration="2000" class="calendarios_todos" id="calendarios">
+<div data-aos="fade-up" data-aos-duration="2000" class="containerCalendarios" id="calendarios">
   <div class="calendario1">
     <div id='calendar' class="container-fluid calendario">
   </div>
@@ -152,139 +146,144 @@
   </div>
 </div>
 
+
+
 <div  data-aos="fade-up" data-aos-duration="2000" class="talleristas_container" id="Talleristas">
-
-<div  style="height: 150px; overflow: hidden;" >
-  <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
-    <path d="M-0.90,69.56 C200.00,-101.15 272.23,223.51 502.48,6.43 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #2596be ;">
-    </path>
-  </svg>
-</div>
-
-<div class="carousel_talleristas position-relative" >
+  <div  style="height: 150px; overflow: hidden;" >
+    <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+      <path d="M-0.90,69.56 C200.00,-101.15 272.23,223.51 502.48,6.43 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #2596be ;">
+      </path>
+    </svg>
+  </div>
+<div class="sliderTalleristas position-relative">
   <h1>Talleristas</h1>
-    <div class="uk-hidden@s gif_deslizar">
+    <div class="uk-hidden@s gifInstrucciones">
       <img src="/img/swipe.fafa7564.gif" width="100px" height="100px">
     </div>
+
       <div uk-slider  class="uk-position-relative container">
-        <div class="">
-          <div class="uk-slider-container talleristas_items container uk-light">
-            <ul class="uk-slider-items  uk-child-width-1 uk-child-width-1-2@s uk-child-width-1-3@m">
+        <div class="uk-slider-container itemsSliderTalleristas container uk-light">
+          <ul class="uk-slider-items  uk-child-width-1 uk-child-width-1-2@s uk-child-width-1-3@m">
               
-              <li class="ml-2">
-                <label>
-                <input type="checkbox" />
-                  <div class="card">
-                    <div class="front">
-                      <img src="/img/Vanessa.jpg" class="front"  alt="Vanessa">
-                      <button class="boton_persona">Vanessa Rivas</button>
-                      <button class="boton_cargo">Asesora en Calidad de los contenidos</button>
-                    </div> 
-                    <div class="back">
-                      <h3>Vanessa Rivas Valencia </h3>
-                      <p>Diseñador gráfico, con más de 14 años de experiencia en la producción de video corporativo, social y comercial, también ha incursionado en producciones de cine documental y realidades extendidas.  Ha desarrollado contenido de motion graphics, modelado y  animación 3D e interactividad. Profesor universitario en el área de diseño gráfico, comunicación y diseño industrial.</p>
-                    </div>                
+            <li class="ml-2">
+              <label>
+              <input type="checkbox" />
+                <div class="card">
+                  <div class="front">
+                    <img src="/img/Vanessa.jpg" class="front"  alt="Vanessa">
+                    <button class="btnNombreTallerista">Vanessa Rivas</button>
+                    <button class="btnCargoTallerista">Asesora en Calidad de los contenidos</button>
+                  </div> 
+                  <div class="back">
+                    <h3>Vanessa Rivas Valencia </h3>
+                    <p>Diseñador gráfico, con más de 14 años de experiencia en la producción de video corporativo, social y comercial, también ha incursionado en producciones de cine documental y realidades extendidas.  Ha desarrollado contenido de motion graphics, modelado y  animación 3D e interactividad. Profesor universitario en el área de diseño gráfico, comunicación y diseño industrial.</p>
+                  </div>                
+                </div>
+              </label>
+            </li>
+
+
+            <li>
+              <label>
+              <input type="checkbox"  />
+                <div class="card">
+                  <div class="front">
+                    <img src="/img/Vanessa.jpg" class="front">
+                    <button class="btnNombreTallerista">Vanessa Rivas</button>
+                    <button class="btnCargoTallerista">Asesora en Calidad de los contenidos</button>
+                  </div>      
+                  <div class="back">
+                    <h3>Vanessa Rivas Valencia </h3>
+                    <p>Diseñador gráfico, con más de 14 años de experiencia en la producción de video corporativo, social y comercial, también ha incursionado en producciones de cine documental y realidades extendidas.  Ha desarrollado contenido de motion graphics, modelado y  animación 3D e interactividad. Profesor universitario en el área de diseño gráfico, comunicación y diseño industrial.</p>
+                 </div>
+                </div>
+              </label>
+            </li>
+
+            <li>
+              <label>
+              <input type="checkbox"  />
+                <div class="card">
+                  <div class="front">
+                    <img src="/img/Vanessa.jpg" class="front">
+                    <button class="btnNombreTallerista">Vanessa Rivas</button>
+                    <button class="btnCargoTallerista">Asesora en Calidad de los contenidos</button>
+                  </div>      
+                  <div class="back">
+                    <h3>Vanessa Rivas Valencia </h3>
+                    <p>Diseñador gráfico, con más de 14 años de experiencia en la producción de video corporativo, social y comercial, también ha incursionado en producciones de cine documental y realidades extendidas.  Ha desarrollado contenido de motion graphics, modelado y  animación 3D e interactividad. Profesor universitario en el área de diseño gráfico, comunicación y diseño industrial.</p>
                   </div>
-                </label>
-              </li>
+                </div>
+              </label>
+            </li>
+                        
+            <li>
+              <label>
+              <input type="checkbox"  />
+                <div class="card">
+                  <div class="front"><img src="/img/Vanessa.jpg" class="front">
+                    <button class="btnNombreTallerista">Vanessa Rivas</button>
+                    <button class="btnCargoTallerista">Asesora en Calidad de los contenidos</button>
+                  </div>      
+                  <div class="back">
+                    <h3>Vanessa Rivas Valencia </h3>
+                    <p>Diseñador gráfico, con más de 14 años de experiencia en la producción de video corporativo, social y comercial, también ha incursionado en producciones de cine documental y realidades extendidas.  Ha desarrollado contenido de motion graphics, modelado y  animación 3D e interactividad. Profesor universitario en el área de diseño gráfico, comunicación y diseño industrial.</p>
+                  </div>
+                </div>
+              </label>
+            </li>
+                            
+            <li>
+              <label>
+              <input type="checkbox"  />
+                <div class="card">
+                  <div class="front">
+                    <img src="/img/Vanessa.jpg" class="front">
+                    <button class="btnNombreTallerista">Vanessa Rivas</button>
+                    <button class="btnCargoTallerista">Asesora en Calidad de los contenidos</button>
+                  </div>      
+                  <div class="back">
+                    <h3>Vanessa Rivas Valencia </h3>
+                    <p>Diseñador gráfico, con más de 14 años de experiencia en la producción de video corporativo, social y comercial, también ha incursionado en producciones de cine documental y realidades extendidas.  Ha desarrollado contenido de motion graphics, modelado y  animación 3D e interactividad. Profesor universitario en el área de diseño gráfico, comunicación y diseño industrial.</p>
+                  </div>
+                </div>
+              </label>
+            </li>
 
+            <li>
+              <label>
+              <input type="checkbox"  />
+                <div class="card">
+                  <div class="front">
+                    <img src="/img/Vanessa.jpg" class="front">
+                    <button class="btnNombreTallerista">Vanessa Rivas</button>
+                    <button class="btnCargoTallerista">Asesora en Calidad de los contenidos</button>
+                  </div>      
+                  <div class="back">                     
+                    <h3>Vanessa Rivas Valencia </h3>
+                    <p>Diseñador gráfico, con más de 14 años de experiencia en la producción de video corporativo, social y comercial, también ha incursionado en producciones de cine documental y realidades extendidas.  Ha desarrollado contenido de motion graphics, modelado y  animación 3D e interactividad. Profesor universitario en el área de diseño gráfico, comunicación y diseño industrial.</p>                    
+                  </div>
+                </div>
+              </label>
+            </li>           
+          </div>   
+          <div class="uk-visible@s uk-visible\@m uk-visible\@l boton">
+            <a class="uk-position-center-left-out" style="background-color: #ff8308; border-radius: 50%;" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right-out" style="background-color: #ff8308; border-radius: 50%;" href="#" uk-slidenav-next uk-slider-item="next"></a>
+          </div>     
+        </div>
+        <ul class="uk-slider-nav uk-dotnav uk-flex-center botones_color uk-position-relative" style="color: white;">
+      </ul>
+    </div>
+    <div class="waveFirstSistematizacion" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.90,69.56 C200.00,-101.15 272.23,223.51 502.48,6.43 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #2596be ;"></path></svg></div>
+  </div>
 
-                <li>
-                  <label>
-                  <input type="checkbox"  />
-                    <div class="card">
-                       <div class="front">
-                        <img src="/img/Vanessa.jpg" class="front">
-                        <button class="boton_persona">Vanessa Rivas</button>
-                        <button class="boton_cargo">Asesora en Calidad de los contenidos</button>
-                      </div>      
-                      <div class="back">
-                        <h3>Vanessa Rivas Valencia </h3>
-                        <p>Diseñador gráfico, con más de 14 años de experiencia en la producción de video corporativo, social y comercial, también ha incursionado en producciones de cine documental y realidades extendidas.  Ha desarrollado contenido de motion graphics, modelado y  animación 3D e interactividad. Profesor universitario en el área de diseño gráfico, comunicación y diseño industrial.</p>
-                       </div>
-                      </div>
-                    </label>
-                   </li>
-
-                      <li>
-                        <label>
-                        <input type="checkbox"  />
-                          <div class="card">
-                            <div class="front"><img src="/img/Vanessa.jpg" class="front">
-                              <button class="boton_persona">Vanessa Rivas</button>
-                              <button class="boton_cargo">Asesora en Calidad de los contenidos</button>
-                             </div>      
-                              <div class="back">
-                                <h3>Vanessa Rivas Valencia </h3>
-                                <p>Diseñador gráfico, con más de 14 años de experiencia en la producción de video corporativo, social y comercial, también ha incursionado en producciones de cine documental y realidades extendidas.  Ha desarrollado contenido de motion graphics, modelado y  animación 3D e interactividad. Profesor universitario en el área de diseño gráfico, comunicación y diseño industrial.</p>
-                              </div>
-                            </div>
-                        </label>
-                      </li>
-                        <li>
-                          <label>
-                          <input type="checkbox"  />
-                            <div class="card">
-                              <div class="front"><img src="/img/Vanessa.jpg" class="front">
-                                <button class="boton_persona">Vanessa Rivas</button>
-                                <button class="boton_cargo">Asesora en Calidad de los contenidos</button>
-                              </div>      
-                                <div class="back">
-                                  <h3>Vanessa Rivas Valencia </h3>
-                                  <p>Diseñador gráfico, con más de 14 años de experiencia en la producción de video corporativo, social y comercial, también ha incursionado en producciones de cine documental y realidades extendidas.  Ha desarrollado contenido de motion graphics, modelado y  animación 3D e interactividad. Profesor universitario en el área de diseño gráfico, comunicación y diseño industrial.</p>
-                                </div>
-                              </div>
-                            </label>
-                          </li>
-                            <li>
-                              <label>
-                               <input type="checkbox"  />
-                                <div class="card">
-                                  <div class="front"><img src="/img/Vanessa.jpg" class="front">
-                                    <button class="boton_persona">Vanessa Rivas</button>
-                                    <button class="boton_cargo">Asesora en Calidad de los contenidos</button>
-                                  </div>      
-                                    <div class="back">
-                                      <h3>Vanessa Rivas Valencia </h3>
-                                      <p>Diseñador gráfico, con más de 14 años de experiencia en la producción de video corporativo, social y comercial, también ha incursionado en producciones de cine documental y realidades extendidas.  Ha desarrollado contenido de motion graphics, modelado y  animación 3D e interactividad. Profesor universitario en el área de diseño gráfico, comunicación y diseño industrial.</p>
-                                    </div>
-                                  </div>
-                                </label>
-                               </li>
-                                <li>
-                                  <label>
-                                  <input type="checkbox"  />
-                                      <div class="card">
-                                        <div class="front"><img src="/img/Vanessa.jpg" class="front">
-                                          <button class="boton_persona">Vanessa Rivas</button>
-                                          <button class="boton_cargo">Asesora en Calidad de los contenidos</button>
-                                        </div>      
-                                          <div class="back">                     
-                                            <h3>Vanessa Rivas Valencia </h3>
-                                            <p>Diseñador gráfico, con más de 14 años de experiencia en la producción de video corporativo, social y comercial, también ha incursionado en producciones de cine documental y realidades extendidas.  Ha desarrollado contenido de motion graphics, modelado y  animación 3D e interactividad. Profesor universitario en el área de diseño gráfico, comunicación y diseño industrial.</p>                    
-                                          </div>
-                                         </div>
-                                      </label>
-                                    </li>
-                                  </div>   
-                                    <div class="uk-visible@s uk-visible\@m uk-visible\@l boton">
-                                      <a class="uk-position-center-left-out" style="background-color: #ff8308; border-radius: 50%;" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-                                      <a class="uk-position-center-right-out" style="background-color: #ff8308; border-radius: 50%;" href="#" uk-slidenav-next uk-slider-item="next"></a>
-                                    </div>     
-                                  </div>
-                                <ul class="uk-slider-nav uk-dotnav uk-flex-center botones_color uk-position-relative" style="color: white;"></ul>
-                              </div>
-                            </div>
-                            <div class="wave_links_1" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.90,69.56 C200.00,-101.15 272.23,223.51 502.48,6.43 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #2596be ;"></path></svg></div>
-                          </div>
-
-                          
-
-<div class="links_siem">
-  <div class="container link-siem">
+                        
+<div data-aos="fade-up" data-aos-duration="2000" class="Sistematizacion">
+  <div class="container containerSistematizacion">
     <h1>Sistematización de Experiencias Innovadoras</h1>
     <p>Eres docente de la universidad catolica de pereira y tienes una experienciainnovadora de tu practica educativa? Participa de la convocatoria en el marco de la semana de innovacion educativa. te compartimos el formato de sismatizacon de experiencias pedagogicas, puedes diligenciarlo segun los items y la rubica, ten en cuenta que la recepcion sera hasta...... <br><br>¿Que esperas para compartir tus experiencias?</p>
-    <div class="formatos row">
+    <div class="formatosDownload row">
       <a class="col" href="/img/Aida.jpg" download="Aida.jpg">Para descargar formato</a>
       <a class="col">Subir Experiencia</a>
     </div>
@@ -293,12 +292,11 @@
 
 </div>
 
-
 <div class="ganadores">
-  <div class="container-texto position-relative">
-    <a><span class="experiencia_ganadores">Ganadores</span><br> Experiencias Innovadoras 2021</a>
+  <div class="containerTextoGanadores position-relative">
+    <a><span class="textoGanadores">Ganadores</span><br> Experiencias Innovadoras 2021</a>
   </div>
-  <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="autoplay: true; autoplay-interval: 5000; center: true">
+  <div class="uk-position-relative uk-visible-toggle uk-light sliderGanadores" tabindex="-1" uk-slider="autoplay: true; autoplay-interval: 10000; center: true; draggable: false;">
     <ul class="uk-slider-items uk-grid">
         <li class="uk-width-3-4">
             <div class="uk-panel">
@@ -324,89 +322,89 @@
 </div>
 </div>
  
-<div class="videos_talleristas_a position-relative"><br><br><br>
-  <div class="ganadores2">
+<div class="videoTalleristas position-relative"><br><br><br>
+  <div class="containerTextoVideos">
     <a>Videos</a>
   </div>
-    <div class="uk-hidden@s gif_deslizar">
-      <img src="/img/swipe.fafa7564.gif" width="100px" height="100px">
+  <div class="uk-hidden@s gifInstrucciones">
+    <img src="/img/swipe.fafa7564.gif" width="100px" height="100px">
+  </div>
+<div uk-slider  class="uk-position-relative container">
+  <div class="uk-slider-container itemsSliderVideos  uk-light">
+    <ul class="uk-slider-items  uk-child-width-1 uk-child-width-1-2@s uk-child-width-1-2@m">
+      <li>
+        <label>
+        <input type="checkbox"  data-video-id="ekuUe28XHng" class="video1"/>
+          <div class="card">
+            <div class="front">
+              <img src="/img/ganadores.jpg" class="front"  alt="Vanessa">
+            </div>         
+          </div>
+        </label>
+      </li>             
+      <li>
+        <label>
+        <input type="checkbox" data-video-id="wJWK5lS80m8" class="video2" />
+          <div class="card">
+             <div class="front">
+              <img src="/img/aziz-acharki-549137-unsplash-1200x775.jpg" class="front">
+            </div>      
+          </div>
+        </label>
+      </li>
+      <li>
+        <label>
+        <input type="checkbox"  data-video-id="_N73PhbQ0AM" class="video3" />
+          <div class="card">
+            <div class="front">
+             <img src="/img/IMG_0319.JPG" class="front">
+            </div>      
+          </div>
+        </label>
+      </li>
+      <li>
+        <label>
+        <input type="checkbox" data-video-id="wJWK5lS80m8" class="video4" />
+          <div class="card">
+            <div class="front">
+              <img src="/img/images.jpg" class="front">
+            </div>      
+          </div>
+        </label>
+      </li>
+      <li>
+        <label>
+        <input type="checkbox" data-video-id="wJWK5lS80m8" class="video5" />
+          <div class="card">
+            <div class="front">
+              <img src="/img/Painting_Art_Back_view_Photographer_575380_3840x2400.jpg" class="front">
+            </div>      
+          </div>
+        </label>
+      </li>
+      <li>
+        <label>
+        <input type="checkbox"  data-video-id="wJWK5lS80m8" class="video6" />
+          <div class="card">
+            <div class="front">
+              <img src="/img/Discapacidad-750x350.jpg" class="front">
+            </div>      
+          </div>
+        </label>
+      </li>
+    </div>   
+      <div class="uk-visible@s boton">
+        <a class="uk-position-center-left-out uk-position-small" style="background-color: #ff8308; border-radius: 50%; border: 2px solid;" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+        <a class="uk-position-center-right-out uk-position-small" style="background-color: #ff8308; border-radius: 50%; border: 2px solid;" href="#" uk-slidenav-next uk-slider-item="next"></a>
+      </div>     
     </div>
-      <div uk-slider  class="uk-position-relative container">
-        <div class="">
-          <div class="uk-slider-container videos_items  uk-light">
-            <ul class="uk-slider-items  uk-child-width-1 uk-child-width-1-2@s uk-child-width-1-2@m">
-              <li>
-                <label>
-                <input type="checkbox"  data-video-id="ekuUe28XHng" class="video1" />
-                <div class="card">
-                  <div class="front">
-                    <img src="/img/ganadores.jpg" class="front"  alt="Vanessa">
-                  </div>         
-                  </div>
-                </label>
-              </li>
-                <li>
-                  <label>
-                  <input type="checkbox" data-video-id="wJWK5lS80m8" class="video2" />
-                    <div class="card">
-                       <div class="front"><img src="/img/aziz-acharki-549137-unsplash-1200x775.jpg" class="front">
-                      </div>      
-                        </div>
-                      </label>
-                     </li>
-                      <li>
-                        <label>
-                        <input type="checkbox"  data-video-id="_N73PhbQ0AM" class="video3" />
-                          <div class="card">
-                            <div class="front"><img src="/img/IMG_0319.JPG" class="front">
-                             </div>      
-                            </div>
-                        </label>
-                      </li>
-                        <li>
-                          <label>
-                          <input type="checkbox" data-video-id="wJWK5lS80m8" class="video4" />
-                            <div class="card">
-                              <div class="front"><img src="/img/images.jpg" class="front">
-                              </div>      
-                              </div>
-                            </label>
-                          </li>
-                            <li>
-                              <label>
-                               <input type="checkbox" data-video-id="wJWK5lS80m8" class="video5" />
-                                <div class="card">
-                                  <div class="front"><img src="/img/Painting_Art_Back_view_Photographer_575380_3840x2400.jpg" class="front">
-                                  </div>      
-                                </label>
-                               </li>
-                                <li>
-                                  <label>
-                                  <input type="checkbox"  data-video-id="wJWK5lS80m8" class="video6" />
-                                    <div class="card">
-                                      <div class="front"><img src="/img/Discapacidad-750x350.jpg" class="front">
-                                      </div>      
-                                       </div>
-                                      </label>
-                                    </li>
-                                  </div>   
-                                    <div class="uk-visible@s boton">
-                                      <a class="uk-position-center-left-out uk-position-small" style="background-color: #ff8308; border-radius: 50%; border: 2px solid;" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-                                      <a class="uk-position-center-right-out uk-position-small" style="background-color: #ff8308; border-radius: 50%; border: 2px solid;" href="#" uk-slidenav-next uk-slider-item="next"></a>
-                                    </div>     
-                                  </div>
-                                <ul class="uk-slider-nav uk-dotnav uk-flex-center botones_color uk-position-relative" style="color: white;"></ul>
-                              </div>
-                            </div>
-                          </div>
-                       
+    <ul class="uk-slider-nav uk-dotnav uk-flex-center botones_color uk-position-relative" style="color: white;">
+  </ul>
 </div>
+  
+<div class="wave_genially" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.90,69.56 C200.00,-101.15 272.23,223.51 502.48,6.43 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #2596be ;"></path></svg></div>
 
-
-</div>
-
-<div  class="wave_genially" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.90,69.56 C200.00,-101.15 272.23,223.51 502.48,6.43 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #2596be ;"></path></svg></div>
-<div class="contenedor_genially">
+<div  class="contenedor_genially">
   <div class="container-wrapper-genially" style="position: relative; min-height: 400px; max-width: 100%;">
     <video class="loader-genially" autoplay="autoplay" loop="loop" playsinline="playsInline" muted="muted" style="position: absolute;top: 45%;left: 50%;transform: translate(-50%, -50%);width: 80px;height: 80px;margin-bottom: 10%">
       <source src="https://static.genial.ly/resources/panel-loader-low.mp4" type="video/mp4"/></video>
@@ -415,17 +413,14 @@
     </div>
   <script>(function (d) { var js, id = "genially-embed-js", ref = d.getElementsByTagName("script")[0]; if (d.getElementById(id)) { return; } js = d.createElement("script"); js.id = id; js.async = true; js.src = "https://view.genial.ly/static/embed/embed.js"; ref.parentNode.insertBefore(js, ref); }(document));</script>
 </div>
-<div  class="wave_genially_cerrar" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.90,69.56 C200.00,-101.15 272.23,223.51 502.48,6.43 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #2596be ;"></path></svg></div>
-
 
 <div class="atencion_usuario container-fluid">
+  <div  class="wave_genially_cerrar position-absolute" style="height: 125px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.90,69.56 C200.00,-101.15 272.23,223.51 502.48,6.43 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #2596be ;"></path></svg></div>
+
   <div class="atencion_item">
-    <h1>Atencion al Usuario</h1>
-    <p>Lun a Vie de 7:00 a.m a 8:00 p.m - Sáb de 7:00 a.m a 3:00 p.m</p>
+    <!-- <h1>Atencion al Usuario</h1>
+    <p>Lun a Vie de 7:00 a.m a 8:00 p.m - Sáb de 7:00 a.m a 3:00 p.m</p> -->
     <div class="atencion_item2 row">
-      <div class="col">
-        <img src="/img/hombre_negocios.png">
-      </div>
 
       <div class="col">
         <div class="card" style="width: 18rem;">
@@ -450,30 +445,24 @@
       </div>
     </div>
   </div>
+  <div class="cerrar_soporte position-absolute" style="height: 125px; overflow: hidden;" >
+    <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+      <path d="M-0.90,69.56 C200.00,-101.15 272.23,223.51 502.48,6.43 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #2596be ;">
+      </path>
+    </svg>
+  </div>
 </div>
 
-<div  class="elementos_redes">
-  <a href="https://www.instagram.com/cie_ucp/" target="_blank" class="bi-instagram"></a>
-  <a href="https://www.facebook.com/cieucp" target="_blank" class="bi-facebook"></a>
-  <a href="https://www.youtube.com/channel/UC9snCBpFm-RdnnjQP6UdZIw" target="_blank" class="bi-youtube"></a>
-  <a href="https://api.whatsapp.com/send?phone=+573168623414&text=Hola!%20He%20estado%20en%20tu%20p%C3%A1gina%20web%20y%20quisiera%20obetner%20m%C3%A1s%20informaci%C3%B3n%20a%20cerca%20de%20la%20Semana%20de%20la%20Innovaci%C3%B3n%20Educativa%20y%20sus%20tallere.%20%C2%A1Gracias!" target="_blank" class="bi-whatsapp"></a>
-
-</div>
-
-<div  style="height: 150px; overflow: hidden;" >
-  <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
-    <path d="M-0.90,69.56 C200.00,-101.15 272.23,223.51 502.48,6.43 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #2596be ;">
-    </path>
-  </svg>
-</div>
 <footer>
   <p>© 2021 Derechos Reservados Universidad Católica de Pereira - Centro de Innovación Educativa </p>
 </footer>
 
-
-
-
-
+<div  class="elementos_redes" id="elementos_redes">
+  <a href="https://www.instagram.com/cie_ucp/" target="_blank" class="bi-instagram" id="instagram"></a>
+  <a href="https://www.facebook.com/cieucp" target="_blank" class="bi-facebook"></a>
+  <a href="https://www.youtube.com/channel/UC9snCBpFm-RdnnjQP6UdZIw" target="_blank" class="bi-youtube"></a>
+  <a href="https://api.whatsapp.com/send?phone=+573168623414&text=Hola!%20He%20estado%20en%20tu%20p%C3%A1gina%20web%20y%20quisiera%20obetner%20m%C3%A1s%20informaci%C3%B3n%20a%20cerca%20de%20la%20Semana%20de%20la%20Innovaci%C3%B3n%20Educativa%20y%20sus%20tallere.%20%C2%A1Gracias!" target="_blank" class="bi-whatsapp"></a>
+</div>
 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
@@ -493,25 +482,18 @@
   </div>
 </div>
 
-
-
-
-
-<script src="/js/modal-video.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/js/uikit-icons.min.js"></script>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
-    <script src="./js/main.min.js"></script>
-    <script src="./js/simplyCountdown.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="./js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/js/uikit.min.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-
-
+  <script src="/js/modal-video.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/js/uikit-icons.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+  <script src="./js/main.min.js"></script>
+  <script src="./js/simplyCountdown.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="./js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/js/uikit.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
