@@ -11,6 +11,11 @@
   flex-direction: column;
 }
 
+.uk-slider-items.uk-grid {
+  flex-wrap: nowrap;
+  transform: none !important;
+}
+
 .bi-instagram:hover {
   color: #d6249f;
 }
@@ -61,128 +66,15 @@
   );
 }
 
-.videos_items {
-  height: 300px;
-  position: relative;
+.uk-position-center-right-out {
+  left: 95% !important;
+  width: max-content;
 }
 
-.videos_talleristas_a {
-  position: relative;
-  width: 100%;
-}
+.uk-position-center-left-out {
+  right: 95% !important;
 
-.ganadores2 {
-  cursor: default;
-  top: 0;
-  color: white;
-  margin-bottom: 20px;
-  position: absolute;
-  font-family: "Poppins", sans-serif;
-  border: black;
-  border-radius: 10px;
-  padding: 10px;
-  width: 50%;
-  text-align: end;
-  background-color: rgb(35, 162, 183, 0.7);
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-  font-size: 20px;
-  cursor: default;
-}
-
-.texto a {
-  font-size: 25px;
-}
-
-.wave_links_1 {
-  transform: rotate(180deg);
-}
-.programas_texto {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  align-items: center;
-  color: white;
-}
-
-.programas_texto a {
-  font-family: "Poppins", sans-serif;
-  font-size: 30px;
-}
-
-.container-programas {
-  min-width: 100%;
-}
-
-@media (min-width: 800px) and (max-width: 1500px) {
-  .informativo_programas {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    grid-template-columns: 25% 25% 25% 25%;
-    background-color: #ff9c64;
-    justify-items: center;
-  }
-}
-
-@media (min-width: 250px) and (max-width: 450px) {
-  .informativo_programas {
-    width: 100%;
-    display: grid;
-    text-align: center;
-    justify-content: center;
-    grid-template-columns: 50% 50%;
-    background-color: #ff9c64;
-  }
-}
-
-@media (min-width: 450px) and (max-width: 799px) {
-  .informativo_programas {
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    text-align: center;
-    grid-template-columns: 50% 50%;
-    background-color: #ff9c64;
-  }
-
-  .uk-position-center-right-out {
-    left: 95% !important;
-    width: max-content;
-  }
-
-  .uk-position-center-left-out {
-    right: 95% !important;
-
-    width: max-content;
-  }
-}
-
-.modal_editar label {
-  width: 100%;
-}
-
-.modal_editar {
-  width: 100%;
-  padding: 0;
-  background-color: transparent;
-  border-radius: 50%;
-  border: none;
-  color: white;
-  text-shadow: 2px 2px 0px #000000;
-}
-
-.carousel_talleristas {
-  background-color: #2596be;
-}
-
-.carousel_talleristas h1 {
-  font-family: "Poppins", sans-serif;
-
-  text-align: center;
-  color: white;
-  margin-bottom: 20px;
-  text-shadow: 2px 2px 0px #000000;
+  width: max-content;
 }
 
 .fondo_flecha {
@@ -192,33 +84,9 @@
 .modal-content button {
   border: none;
 }
-.inscribete {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  width: 100%;
-}
-
-.btn_inscribete {
-  border: black;
-  border-radius: 10px;
-  width: 200px;
-  padding: 20px;
-  background-color: #23a2b7;
-  color: white;
-  font-weight: bold;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-  animation: shake 0.3s linear infinite both;
-  font-size: 20px;
-}
 
 .genially-embed .genially-view-menu-action {
   display: none !important;
-}
-
-.wave_cerrar_informativo {
-  transform: rotate(180deg);
 }
 
 .btn_elegir {
@@ -249,98 +117,19 @@
   }
 }
 
-nav {
-  background-color: #0894ac;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  font-family: "Poppins", sans-serif;
-}
-
-.ganadores ul {
-  transition: none !important;
-}
-
-@media (min-width: 800px) and (max-width: 1500px) {
-  .ganadores .uk-panel {
-    height: 75vh;
-    margin-top: 20px;
-  }
-
-  .ganadores .uk-width-3-4 {
-    width: 100% !important;
-    height: auto;
-  }
-}
-
-@media (min-width: 250px) and (max-width: 450px) {
-  .ganadores .uk-panel {
-    margin-top: 20px;
-    height: auto;
-  }
-
-  .ganadores .uk-width-3-4 {
-    width: 100% !important;
-    height: auto;
-  }
-}
-
-.ganadores img {
-  height: 100%;
-  width: 100%;
-}
-
 .encabezado {
   width: 100%;
   background-color: #fff;
 }
 
-#navbarNavAltMarkup a {
-  color: white;
-  margin-right: 20px;
+.uk-position-center-left-out {
+  right: 95% !important;
+  width: max-content;
 }
 
-.contador {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-}
-
-.img_nav {
-  margin-left: 30px;
-  float: right;
-}
-
-@media (min-width: 250px) and (max-width: 450px) {
-  .seleccionar_calendar {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-  }
-}
-
-@media (min-width: 451px) and (max-width: 1500px) {
-  .seleccionar_calendar {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-  }
-}
-
-.seleccionar_calendar button {
-  margin: 10px;
-}
-
-.navbar {
-  display: flex;
-}
-
-.seleccionar_titulo {
-  display: flex;
-  justify-content: center;
+.uk-position-center-right-out {
+  left: 95% !important;
+  width: max-content;
 }
 
 .list-group img {
@@ -367,6 +156,239 @@ nav {
   display: flex;
   justify-content: center;
 }
+
+#loading {
+  display: none;
+
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.fc-daygrid-event-harness {
+  background-color: rgb(45, 126, 45, 0.3);
+  border-radius: 10px;
+  color: white;
+}
+
+.gifInstrucciones {
+  position: absolute;
+  bottom: 0;
+}
+
+.boton svg {
+  color: #222;
+}
+
+.boton svg:hover {
+  transition: all 0.6s ease;
+}
+
+.informacionparticipantes {
+  background-color: #23a2b7;
+}
+
+.atencion_item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.atencion_item2 img {
+  background-color: white;
+  border-radius: 50%;
+}
+.atencion_item2 li {
+  color: white;
+}
+
+.atencion_item2 .card {
+  background-color: transparent !important;
+}
+.atencion_item2 .list-group {
+  --bs-list-group-bg: transparent !important;
+}
+
+.uk-child-width-1 {
+  display: none;
+}
+
+.tarjeta label:hover :checked + .card {
+  box-shadow: 0 20px 20px rgba(255, 255, 255, 0.2);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #2596be;
+}
+
+footer p {
+  color: rgb(255, 255, 255);
+  margin: 10px;
+}
+
+.informacion img {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+
+.atencion_usuario {
+  position: relative;
+  background-image: url(/img/Atención\ al\ usuario.png);
+  background-size: 100% 100%;
+  display: flex;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.atencion_item {
+  width: 100%;
+}
+
+.atencion_item p {
+  font-size: 1.3em;
+  color: #4d4d4d;
+}
+
+.enlace {
+  display: flex;
+  align-items: center;
+  border: 0;
+  padding: 20;
+  margin: 0;
+  text-decoration: underline;
+  background: cadetblue;
+  font-family: arial, sans-serif;
+  font-size: 1em;
+  line-height: 1em;
+  color: wheat;
+}
+
+.enlace:hover {
+  text-decoration: none;
+  color: #43438d;
+  cursor: pointer;
+  background-color: #222;
+}
+.atencion_item h1 {
+  text-shadow: 2px 2px 0px #000000;
+  color: #ff8308;
+}
+
+#nombres {
+  width: 100%;
+  background-color: #222;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.uk-child-width-1 {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.botones_color a {
+  padding: 10px;
+  background-color: white;
+}
+
+#prueba {
+  margin-bottom: 30px;
+}
+
+.boton_mover svg {
+  color: white;
+  background-color: black;
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+}
+
+.col {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.imagenes_item img {
+  border-radius: 50px;
+}
+
+.uk-overlay-primary {
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.contenedor_genially {
+  height: 400px;
+  width: 100%;
+}
+
+div .genially-embed {
+  height: 100% !important;
+  background-color: #2596be;
+}
+
+.genially-embed .genially-view-navigation-actions-toggle-button {
+  display: none;
+}
+
+.uk-dotnav > .uk-active > * {
+  background-color: #d3811e !important;
+}
+
+.cerrar_soporte {
+  left: 0px;
+  bottom: 0;
+  width: 100%;
+}
+
+#icon_wrapper {
+  position: fixed;
+  top: 25%;
+  right: 0px;
+  z-index: 99999;
+}
+
+@media (max-width: 400px) {
+  .imagenes_item img {
+    border-radius: 50px;
+    height: 200px;
+  }
+
+  .uk-overlay2 {
+    padding: 3px 3px;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1500px) {
+  .uk-overlay2 {
+    padding: 30px 30px;
+  }
+}
+
+/* ---------------------------------------------------------------
+-----------------------------NAVBAR ------------------------------
+------------------------------------------------------------------ */
+
+.img_nav {
+  margin-left: 30px;
+  float: right;
+}
+
+.navbar {
+  display: flex;
+}
+
 .navbar a {
   text-align: center;
   color: white;
@@ -382,62 +404,114 @@ nav {
   opacity: 0.2;
 }
 
-#loading {
-  display: none;
-
-  position: absolute;
-  top: 10px;
-  right: 10px;
-}
-
-.calendarios_todos {
-  max-height: 450px;
-}
-
-#calendar {
-  margin-top: 20px;
-  max-width: 700px;
-  max-height: 450px;
-  margin-bottom: 20px;
-}
-
-#calendar1 {
-  visibility: hidden;
-  margin-top: 20px;
-  max-width: 700px;
-  max-height: 450px;
-  margin-bottom: 20px;
-}
-
-#calendar2 {
-  visibility: hidden;
-  margin-top: 20px;
-  max-width: 700px;
-  max-height: 450px;
-  margin-bottom: 20px;
-}
-
-.calendario a {
-  color: #23a2b7;
-}
-
-.fc-daygrid-event-harness {
-  background-color: rgb(45, 126, 45, 0.3);
-  border-radius: 10px;
+#navbarNavAltMarkup a {
   color: white;
+  margin-right: 5px;
 }
 
-.gif_deslizar {
+nav {
+  background-color: #0894ac;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ---------------------------------------------------------------
+----------------------------- WAVES ------------------------------
+------------------------------------------------------------------ */
+
+.waveFirstSistematizacion {
+  transform: rotate(180deg);
+}
+
+.wave {
+  transform: rotate(180deg);
+}
+
+.wave2 {
+  bottom: 0px;
   position: absolute;
+  width: 100%;
+}
+
+.wave_genially_cerrar {
+  left: 0px;
+  width: 100%;
+  transform: rotate(180deg);
+}
+
+.wave_cerrar_informativo2 {
+  position: absolute;
+  transform: rotate(180deg);
+  width: 100%;
+}
+
+.wave_cerrar_informativo3 {
+  position: absolute;
+  width: 100%;
   bottom: 0;
+  fill: white;
 }
 
-.boton svg {
-  color: #222;
+.wave_cerrar_informativo {
+  transform: rotate(180deg);
 }
 
-.boton svg:hover {
-  transition: all 0.6s ease;
+/* ---------------------------------------------------------------
+--------------------------- INICIO  ------------------------------
+------------------------------------------------------------------ */
+
+.textoInicio a {
+  font-size: 25px;
+}
+
+.textoInicio {
+  margin-top: 20px;
+  text-align: center;
+  color: #6f6a6a;
+}
+.textoInicio span {
+  text-align: center;
+  margin-top: 20px;
+  text-shadow: 2px 2px 0px #000000;
+}
+
+.textoInicio a {
+  font-weight: 600;
+}
+
+.textoInicio span {
+  font-family: "Poppins", sans-serif;
+  color: #ff8308;
+  font-size: 50px;
+}
+
+.inscribete {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.btn_inscribete {
+  border: black;
+  border-radius: 10px;
+  width: 200px;
+  padding: 20px;
+  background-color: #23a2b7;
+  color: white;
+  font-weight: bold;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  animation: shake 0.3s linear infinite both;
+  font-size: 20px;
+}
+
+.contadorContainer {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
 }
 
 .simply-countdown {
@@ -446,14 +520,6 @@ nav {
   font-family: "Poppins", sans-serif;
 }
 
-#programas_titulo {
-  text-align: center;
-  color: white;
-  text-shadow: 2px 2px 0px #000000;
-  background-color: #ff9c64;
-  height: auto;
-  margin: 0;
-}
 @media (min-width: 250px) and (max-width: 450px) {
   .simply-countdown > .simply-section {
     width: 130px;
@@ -513,362 +579,6 @@ nav {
   text-align: center;
 }
 
-.informacionparticipantes {
-  background-color: #23a2b7;
-}
-
-.slider label {
-  -webkit-perspective: 1000px;
-  perspective: 1000px;
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  display: block;
-  width: 240px;
-  height: 300px;
-  cursor: pointer;
-  margin: 10px;
-}
-
-.wave_cerrar_informativo2 {
-  position: absolute;
-  transform: rotate(180deg);
-  width: 100%;
-}
-
-.wave_cerrar_informativo3 {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  fill: white;
-}
-
-.carousel_talleristas .front {
-  -webkit-border-top-left-radius: 10%;
-  -webkit-border-top-right-radius: 10%;
-  -moz-border-radius: 10%;
-
-  /* box-shadow */
-  -webkit-box-shadow: rgba(18, 16, 16, 0.8) 0px 0 10px;
-  -moz-box-shadow: rgba(0, 0, 0, 0.8) 0 0 10px;
-  box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.12), 0 5px 10px rgba(0, 0, 0, 0.24);
-}
-
-.carousel_talleristas .card {
-  position: relative;
-  width: 240px;
-  height: 340px;
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  -webkit-transition: all 600ms;
-  transition: all 600ms;
-  border: none;
-  background-color: #23a2b7;
-}
-
-.carousel_talleristas .card div {
-  position: absolute;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  max-width: 240px;
-}
-
-.carousel_talleristas .card img {
-  border-top-left-radius: 10%;
-  border-top-right-radius: 10%;
-}
-
-.slider h3 {
-  color: rgb(255, 255, 255);
-  text-align: center;
-  font-size: 20px;
-  margin: 10px;
-}
-
-.carousel_talleristas .card div p {
-  color: white;
-  text-align: start;
-  font-size: 16px;
-  margin-left: 10px;
-}
-
-.carousel_talleristas .card .back {
-  background: #222;
-  color: #fff;
-  -webkit-transform: rotateX(180deg);
-  transform: rotateX(180deg);
-  width: 240px;
-  height: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.uk-child-width-1 {
-  display: none;
-}
-.slider label:hover .card {
-  box-shadow: 0 20px 20px rgba(50, 50, 50, 0.2);
-}
-
-.uk-slider input {
-  display: none;
-}
-
-.carousel_talleristas :checked + .card {
-  transform: rotateX(180deg);
-  -webkit-transform: rotateX(180deg);
-}
-
-.tarjeta label:hover :checked + .card {
-  box-shadow: 0 20px 20px rgba(255, 255, 255, 0.2);
-}
-
-footer {
-  display: flex;
-  justify-content: center;
-  background-color: #2596be;
-}
-
-footer p {
-  color: rgb(255, 255, 255);
-  margin: 10px;
-}
-
-.informacion img {
-  width: 100%;
-  height: 100%;
-  padding: 10px;
-}
-
-.atencion_usuario {
-  display: flex;
-  text-align: center;
-  width: 100%;
-}
-
-.atencion_item {
-  width: 100%;
-}
-
-.atencion_item p {
-  font-size: 1.3em;
-  color: #4d4d4d;
-}
-
-.enlace {
-  display: flex;
-  align-items: center;
-  border: 0;
-  padding: 20;
-  margin: 0;
-  text-decoration: underline;
-  background: cadetblue;
-  font-family: arial, sans-serif;
-  font-size: 1em;
-  line-height: 1em;
-  color: wheat;
-}
-
-.enlace:hover {
-  text-decoration: none;
-  color: #43438d;
-  cursor: pointer;
-  background-color: #222;
-}
-.atencion_item h1 {
-  text-shadow: 2px 2px 0px #000000;
-  color: #ff8308;
-}
-
-#nombres {
-  width: 100%;
-  background-color: #222;
-  color: white;
-  font-size: 20px;
-  padding: 20px;
-  border-radius: 50px;
-  text-align: center;
-}
-
-.uk-child-width-1 {
-  display: flex;
-  align-items: center;
-  text-align: center;
-}
-
-.talleristas_items {
-  height: 400px;
-}
-
-.boton_persona {
-  background-color: #ff8308;
-  padding: 5px;
-  width: 100%;
-  height: 40px;
-  border: none;
-  font-size: 20px;
-  font-weight: bold;
-  color: white;
-}
-
-.boton_cargo {
-  background-color: #ff8308;
-  padding: 5px;
-  width: 100%;
-  height: 30px;
-  border: none;
-  font-size: 10px;
-  color: white;
-}
-
-.botones_color a {
-  padding: 10px;
-  background-color: white;
-}
-
-#prueba {
-  margin-bottom: 30px;
-}
-
-.links_siem {
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-}
-
-.links_siem p {
-  text-align: left;
-}
-
-.formatos {
-  display: flex;
-  text-align: center;
-  align-items: center;
-}
-
-.formatos a {
-  margin: 40px;
-  background-color: #23a2b7;
-  border: none;
-  border-radius: 10px;
-  padding: 10px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.24);
-  color: white;
-  font-family: "Poppins", sans-serif;
-}
-
-.link-siem h1 {
-  font-family: "Poppins", sans-serif;
-  color: #ff8308;
-  text-shadow: 2px 2px 0px #000000;
-}
-
-.boton_mover svg {
-  color: white;
-  background-color: black;
-  width: 30px;
-  height: 30px;
-  border-radius: 50px;
-}
-.boton_video {
-  background-color: #ff8308;
-  padding: 5px;
-  width: 50%;
-  height: 40px;
-  border: none;
-  font-size: 20px;
-  font-weight: bold;
-  color: white;
-}
-
-.texto {
-  margin-top: 20px;
-  text-align: center;
-  color: #6f6a6a;
-}
-.texto span {
-  text-align: center;
-  margin-top: 20px;
-  text-shadow: 2px 2px 0px #000000;
-}
-
-.col {
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-}
-
-@media (min-width: 250px) and (max-width: 450px) {
-  .primero {
-    height: 175px;
-    width: 175px;
-  }
-}
-
-@media (min-width: 451px) and (max-width: 1500px) {
-  .primero {
-    height: 200px;
-    width: 200px;
-  }
-}
-
-.videos_items .card {
-  position: relative;
-  width: 350px;
-  height: 240px;
-  border: none;
-  background-color: #000000;
-  overflow: hidden;
-}
-
-.videos_items .card div {
-  position: absolute;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.videos_items img {
-  height: 250px;
-  max-width: auto;
-}
-
-.modal_ {
-  height: 100%;
-  width: 100%;
-}
-
-.texto a {
-  font-weight: 600;
-}
-
-.informativo_programas input {
-  visibility: hidden;
-}
-
-.informativo_programas img {
-  margin-bottom: 20px;
-  height: 70%;
-  width: 70%;
-  box-shadow: rgba(0, 0, 0, 0.48) 1px 2px 5px 0px,
-    rgba(0, 0, 0, 0.8) -1px -2px 5px 0px;
-  border-radius: 50%;
-}
-
-.texto span {
-  font-family: "Poppins", sans-serif;
-  color: #ff8308;
-  font-size: 50px;
-}
-
-.imagenes_item img {
-  border-radius: 50px;
-}
-
-.uk-overlay-primary {
-  border-bottom-left-radius: 50px;
-  border-bottom-right-radius: 50px;
-}
-
 .simply-countdown > .simply-section {
   border-radius: 10px;
   box-shadow: 0px 5px 5px 2px rgb(0 0 0 / 12%), 0px 5px 5px 2px rgb(0 0 0 / 24%);
@@ -894,36 +604,423 @@ footer p {
   }
 }
 
-.experiencia_ganadores {
-  font-size: 1.3em;
-  font-weight: bold;
-  color: rgb(255, 255, 255);
-  text-shadow: none !important;
+/* ---------------------------------------------------------------
+------------------------- PROGRAMAS   ----------------------------
+------------------------------------------------------------------ */
+
+.programas_texto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
 
-.contenedor_genially {
-  height: 400px;
+.programas_texto a {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+}
+
+.containerProgramas {
+  min-width: 100%;
+}
+
+@media (min-width: 800px) and (max-width: 50000px) {
+  .informativo_programas {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-template-columns: 25% 25% 25% 25%;
+    background-color: #ff9c64;
+    justify-items: center;
+  }
+}
+
+@media (min-width: 250px) and (max-width: 450px) {
+  .informativo_programas {
+    width: 100%;
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    grid-template-columns: 50% 50%;
+    background-color: #ff9c64;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 799px) {
+  .informativo_programas {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    grid-template-columns: 50% 50%;
+    background-color: #ff9c64;
+  }
+}
+
+.informativo_programas input {
+  visibility: hidden;
+}
+
+.informativo_programas img {
+  margin-bottom: 20px;
+  height: 70%;
+  width: 70%;
+  box-shadow: rgba(0, 0, 0, 0.48) 1px 2px 5px 0px,
+    rgba(0, 0, 0, 0.8) -1px -2px 5px 0px;
+  border-radius: 50%;
+}
+
+#programas_titulo {
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 0px #000000;
+  background-color: #ff9c64;
+  height: auto;
+  margin: 0;
+}
+
+.textProgramas {
+  margin: 0;
+  text-align: center;
+  background-color: #ff9c64;
+}
+
+@media (min-width: 250px) and (max-width: 450px) {
+  .primero {
+    height: 175px;
+    width: 175px;
+  }
+}
+
+@media (min-width: 451px) and (max-width: 1500px) {
+  .primero {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+.modal_editar label {
   width: 100%;
 }
 
-div .genially-embed {
-  height: 100% !important;
+.modal_editar {
+  width: 100%;
+  padding: 0;
+  background-color: transparent;
+  border-radius: 50%;
+  border: none;
+  color: white;
+  text-shadow: 2px 2px 0px #000000;
+}
+
+.modal_ {
+  height: 100%;
+  width: 100%;
+}
+
+/* ---------------------------------------------------------------
+----------------------CALENDARIOS STYLES--------------------------
+------------------------------------------------------------------ */
+
+#calendar {
+  margin-top: 20px;
+  max-width: 700px;
+  max-height: 450px;
+  margin-bottom: 20px;
+}
+
+#calendar1 {
+  visibility: hidden;
+  margin-top: 20px;
+  max-width: 700px;
+  max-height: 450px;
+  margin-bottom: 20px;
+}
+
+#calendar2 {
+  visibility: hidden;
+  margin-top: 20px;
+  max-width: 700px;
+  max-height: 450px;
+  margin-bottom: 20px;
+}
+
+.tituloCalendario {
+  display: flex;
+  justify-content: center;
+}
+
+.containerCalendarios {
+  max-height: 450px;
+}
+
+.calendario a {
+  color: #23a2b7;
+}
+
+@media (min-width: 250px) and (max-width: 450px) {
+  .btnCalendarios {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 451px) and (max-width: 1500px) {
+  .btnCalendarios {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+.btnCalendarios button {
+  margin: 10px;
+}
+
+/* ---------------------------------------------------------------
+------------------------- TALLERISTAS  ---------------------------
+------------------------------------------------------------------ */
+
+.sliderTalleristas {
   background-color: #2596be;
 }
 
-.genially-embed .genially-view-navigation-actions-toggle-button {
+.sliderTalleristas h1 {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 0px #000000;
+}
+
+.slider label {
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  display: block;
+  width: 240px;
+  height: 300px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.sliderTalleristas .front {
+  -webkit-border-top-left-radius: 10%;
+  -webkit-border-top-right-radius: 10%;
+  -webkit-border-bottom-left-radius: 10%;
+  -webkit-border-bottom-right-radius: 10%;
+  -moz-border-radius: 10%;
+
+  /* box-shadow */
+  -webkit-box-shadow: rgba(18, 16, 16, 0.8) 0px 0 10px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.8) 0 0 10px;
+  box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.12), 0 5px 10px rgba(0, 0, 0, 0.24);
+}
+
+.sliderTalleristas .card {
+  position: relative;
+  width: 240px;
+  height: 370px;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: all 600ms;
+  transition: all 600ms;
+  border: none;
+  background-color: transparent;
+}
+
+.sliderTalleristas .card div {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  max-width: 240px;
+}
+
+.sliderTalleristas .card img {
+  border-bottom: none !important;
+  -webkit-border-bottom-left-radius: 1% !important;
+  -webkit-border-bottom-right-radius: 1% !important;
+}
+
+.slider h3 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 20px;
+  margin: 10px;
+}
+
+.sliderTalleristas .card div p {
+  margin: 0;
+  color: white;
+  text-align: start;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.sliderTalleristas .card div h3 {
+  margin: 0;
+  text-shadow: 2px 2px 0px #000000;
+}
+
+.sliderTalleristas .back {
+  z-index: 1;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(/img/Vanessa.jpg);
+  background-size: 100% 300px;
+  background-repeat: no-repeat;
+  color: rgb(255, 0, 0);
+  -webkit-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+  width: 240px;
+  height: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-border-top-left-radius: 10%;
+  -webkit-border-top-right-radius: 10%;
+  -webkit-border-bottom-left-radius: 10%;
+  -webkit-border-bottom-right-radius: 10%;
+  -moz-border-radius: 10%;
+
+  /* box-shadow */
+  -webkit-box-shadow: rgba(18, 16, 16, 0.8) 0px 0 10px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.8) 0 0 10px;
+  box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.12), 0 5px 10px rgba(0, 0, 0, 0.24);
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.sliderTalleristas p {
+  color: red;
+  filter: brightness(4);
+}
+
+.slider label:hover .card {
+  box-shadow: 0 20px 20px rgba(50, 50, 50, 0.2);
+}
+
+.uk-slider input {
   display: none;
 }
 
-.uk-dotnav > .uk-active > * {
-  background-color: #d3811e !important;
+.sliderTalleristas :checked + .card {
+  transform: rotateX(180deg);
+  -webkit-transform: rotateX(180deg);
 }
-.wave_genially_cerrar {
-  transform: rotate(180deg);
+
+.btnNombreTallerista {
+  background-color: #ff8308;
+  padding: 5px;
+  width: 100%;
+  height: 40px;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.btnCargoTallerista {
+  background-color: #ff8308;
+  padding: 5px;
+  width: 100%;
+  height: 30px;
+  border: none;
+  font-size: 10px;
+  color: white;
+
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+.itemsSliderTalleristas {
+  height: 400px;
+}
+
+/* ---------------------------------------------------------------
+----------------------- Sistematizacion --------------------------
+------------------------------------------------------------------ */
+
+.Sistematizacion {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.Sistematizacion p {
+  text-align: left;
+}
+
+.containerSistematizacion h1 {
+  font-family: "Poppins", sans-serif;
+  color: #ff8308;
+  text-shadow: 2px 2px 0px #000000;
+}
+
+.formatosDownload {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.formatosDownload a {
+  margin: 40px;
+  background-color: #23a2b7;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.24);
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ---------------------------------------------------------------
+-------------------------- Ganadores -----------------------------
+------------------------------------------------------------------ */
+
+.ganadores ul {
+  transition: none !important;
+}
+
+@media (min-width: 800px) and (max-width: 4500px) {
+  .ganadores .uk-panel {
+    height: 100vh;
+    margin-top: 20px;
+  }
+
+  .ganadores .uk-width-3-4 {
+    width: 100% !important;
+    height: auto;
+  }
+}
+
+@media (min-width: 250px) and (max-width: 450px) {
+  .ganadores .uk-panel {
+    margin-top: 20px;
+    height: 50vh;
+  }
+
+  .ganadores .uk-width-3-4 {
+    width: 100% !important;
+    height: auto;
+  }
+}
+
+.ganadores img {
+  height: 100%;
+  width: 100%;
 }
 
 @media (min-width: 800px) and (max-width: 1500px) {
-  .container-texto {
+  .containerTextoGanadores {
     font-family: "Poppins", sans-serif;
     border: black;
     border-radius: 10px;
@@ -938,7 +1035,7 @@ div .genially-embed {
 }
 
 @media (min-width: 250px) and (max-width: 450px) {
-  .container-texto {
+  .containerTextoGanadores {
     font-family: "Poppins", sans-serif;
     border: black;
     border-radius: 10px;
@@ -952,39 +1049,70 @@ div .genially-embed {
   }
 }
 
-.videos_talleristas_a .card {
-  box-shadow: 0px 5px 5px 2px rgb(0 0 0 / 12%), 0px 5px 5px 2px rgb(0 0 0 / 24%);
+.textoGanadores {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  text-shadow: none !important;
 }
 
-#icon_wrapper {
-  position: fixed;
-  top: 25%;
-  right: 0px;
-  z-index: 99999;
-}
-.wave {
-  transform: rotate(180deg);
+/* ---------------------------------------------------------------
+---------------------------- VIDEOS ------------------------------
+------------------------------------------------------------------ */
+
+.itemsSliderVideos {
+  height: 300px;
+  position: relative;
 }
 
-.wave2 {
-  bottom: 0px;
-  position: absolute;
+.videoTalleristas {
+  position: relative;
   width: 100%;
 }
 
-@media (max-width: 400px) {
-  .imagenes_item img {
-    border-radius: 50px;
-    height: 200px;
-  }
-
-  .uk-overlay2 {
-    padding: 3px 3px;
-  }
+.containerTextoVideos {
+  cursor: default;
+  top: 0;
+  color: white;
+  margin-bottom: 20px;
+  position: absolute;
+  font-family: "Poppins", sans-serif;
+  border: black;
+  border-radius: 10px;
+  padding: 10px;
+  width: 50%;
+  text-align: end;
+  background-color: rgb(35, 162, 183, 0.7);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  font-size: 20px;
+  cursor: default;
 }
 
-@media (min-width: 800px) and (max-width: 1500px) {
-  .uk-overlay2 {
-    padding: 30px 30px;
-  }
-} ;
+.itemsSliderVideos .card {
+  position: relative;
+  width: 350px;
+  height: 240px;
+  border: none;
+  background-color: #000000;
+  overflow: hidden;
+}
+
+.itemsSliderVideos .card div {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.itemsSliderVideos img {
+  height: 250px;
+  max-width: auto;
+}
+
+.videoTalleristas .card {
+  box-shadow: 0px 5px 5px 2px rgb(0 0 0 / 12%), 0px 5px 5px 2px rgb(0 0 0 / 24%);
+}
+
+
+/* ---------------------------------------------------------------
+---------------------------- VIDEOS ------------------------------
+------------------------------------------------------------------ */
