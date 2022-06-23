@@ -16,24 +16,12 @@
   transform: none !important;
 }
 
-.bi-instagram:hover {
-  color: #d6249f;
-}
-
-.bi-youtube:hover {
-  color: #ff0044;
-}
-
-.bi-whatsapp:hover {
-  color: green;
-}
-
 .elementos_redes a {
   display: block;
   text-align: center;
   justify-content: center;
   align-items: center;
-  font-size: 40px;
+  font-size: 30px;
   color: #ff8308;
   margin-right: 10px;
   text-shadow: 2px 2px 0px #000000;
@@ -53,6 +41,11 @@
 .fc-toolbar-title:first-letter {
   text-transform: uppercase;
 }
+
+.fc-toolbar-title {
+  color: gray;
+}
+
 .inicio {
   background: linear-gradient(
     to right,
@@ -624,28 +617,85 @@ nav {
 
 .containerProgramas {
   min-width: 100%;
+  height: 100%;
+}
+
+.Imagen1{
+  background-image: url(/img/Categorias/categorias1.png);
+  background-size: 100% 100%;
+  height: 100%;
+  width: 100%;
+}
+
+.Imagen2{
+  background-image: url(/img/Categorias/categorias2.png);
+  background-size: 100% 100%;
+  height: 100%;
+  width: 100%;
+}
+
+.Imagen3{
+  background-image: url(/img/Categorias/categorias3.png);
+  background-size: 100% 100%;
+  height: 100%;
+  width: 100%;
+}
+
+.Imagen4{
+  background-image: url(/img/Categorias/categorias4.png);
+  background-size: 100% 100%;
+  height: 100%;
+  width: 100%;
+}
+
+.Imagen1:hover{
+  background-image: url(/img/Categorias/1\ Educación\ Virtual.png);
+  background-size: 100% 100%;
+  height: 100%;
+  width: 100%;
+}
+
+.Imagen2:hover{
+  background-image: url(/img/Categorias/2\ Derecho\ de\ Autor.png);
+  background-size: 100% 100%;
+  height: 100%;
+  width: 100%;
+}
+
+.Imagen3:hover{
+  background-image: url(/img/Categorias/3\ Bigdata.png);
+  background-size: 100% 100%;
+  height: 100%;
+  width: 100%;
+}
+
+.Imagen4:hover{
+  background-image: url(/img/Categorias/4\ Producción.png);
+  background-size: 100% 100%;
+  height: 100%;
+  width: 100%;
 }
 
 @media (min-width: 800px) and (max-width: 50000px) {
   .informativo_programas {
+    height: 100vh;
     display: grid;
     justify-content: center;
     align-items: center;
     text-align: center;
     grid-template-columns: 25% 25% 25% 25%;
-    background-color: #ff9c64;
     justify-items: center;
   }
 }
 
 @media (min-width: 250px) and (max-width: 450px) {
   .informativo_programas {
+    height: 50vh;
     width: 100%;
     display: grid;
     text-align: center;
     justify-content: center;
-    grid-template-columns: 50% 50%;
-    background-color: #ff9c64;
+    grid-template-columns: 25% 25% 25% 25%;
   }
 }
 
@@ -655,8 +705,7 @@ nav {
     justify-items: center;
     align-items: center;
     text-align: center;
-    grid-template-columns: 50% 50%;
-    background-color: #ff9c64;
+    grid-template-columns: 25% 25% 25% 25%;
   }
 }
 
@@ -666,18 +715,14 @@ nav {
 
 .informativo_programas img {
   margin-bottom: 20px;
-  height: 70%;
-  width: 70%;
-  box-shadow: rgba(0, 0, 0, 0.48) 1px 2px 5px 0px,
-    rgba(0, 0, 0, 0.8) -1px -2px 5px 0px;
-  border-radius: 50%;
+  height: 100%;
+  width: 100%;
 }
 
 #programas_titulo {
   text-align: center;
   color: white;
   text-shadow: 2px 2px 0px #000000;
-  background-color: #ff9c64;
   height: auto;
   margin: 0;
 }
@@ -685,7 +730,6 @@ nav {
 .textProgramas {
   margin: 0;
   text-align: center;
-  background-color: #ff9c64;
 }
 
 @media (min-width: 250px) and (max-width: 450px) {
@@ -758,7 +802,7 @@ nav {
 }
 
 .calendario a {
-  color: #23a2b7;
+  color: gray;
 }
 
 @media (min-width: 250px) and (max-width: 450px) {
@@ -984,7 +1028,7 @@ nav {
   text-decoration: none !important;
 }
 
-.formatosDownload a:hover{
+.formatosDownload a:hover {
   color: white !important;
 }
 
@@ -1252,7 +1296,6 @@ nav {
   border-radius: 5px;
   margin-top: -6px;
 }
-
 
 /* ---------------------------------------------------------------
 ---------------------------- VIDEOS ------------------------------
