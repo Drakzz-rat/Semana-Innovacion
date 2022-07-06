@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
 </head>
-<body> 
+<body id="body"> 
   
 <nav class="navbar navbar-expand-lg navbar-light">
   <img class="img_nav" width="150" height="100" href="#" src="/img/Recursos/LogoSemie.png">
@@ -52,8 +52,7 @@
 </div>
 
 <div class="containerProgramas">
-  <h1 id="programas_titulo">Categorías</h1>
-  <p class="card-text textProgramas"><small class="text-muted">Puedes presionar la imagen para ver mas informacion</small></p>
+  
   <div class="informativo_programas" id="programas_container">
     <div class="containerItemPrograma Imagen1">
     </div>
@@ -97,7 +96,7 @@
 </div>
 
 <div  data-aos="fade-up" data-aos-duration="2000" class="talleristas_container" id="Talleristas">
-  <div  style="height: 150px; overflow: hidden;" >
+  <div class="waveTalleristasOpen" style="height: 150px; overflow: hidden;" >
     <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
       <path d="M-0.90,69.56 C200.00,-101.15 272.23,223.51 502.48,6.43 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #2596be ;">
       </path>
@@ -239,8 +238,8 @@
 
 </div>
 
-<div class="ganadores">
-  <div class="containerTextoGanadores position-relative">
+<div class="ganadores position-relative" id="ganadores">
+  <div class="containerTextoGanadores ">
     <a><span class="textoGanadores">Ganadores</span><br> Experiencias Innovadoras 2021</a>
   </div>
   <div class="uk-position-relative uk-visible-toggle uk-light sliderGanadores" tabindex="-1" uk-slider="autoplay: true; autoplay-interval: 10000; center: true; draggable: false;">
@@ -273,19 +272,16 @@
   <div class="containerTextoVideos">
     <a>Videos</a>
   </div>
-  <div class="uk-hidden@s gifInstrucciones">
-    <img src="/img/Recursos/swipe.fafa7564.gif" width="100px" height="100px">
-  </div>
+
 <div uk-slider  class="uk-position-relative container">
   <div class="uk-slider-container itemsSliderVideos  uk-light">
     <ul class="uk-slider-items  uk-child-width-1 uk-child-width-1-2@s uk-child-width-1-2@m">
-      <li>
-        <label>
-        <input type="checkbox"  data-video-id="ekuUe28XHng" class="video1"/>
+      <li data-video-id="ekuUe28XHng" class="video1">
+        <label >
+        <input type="checkbox" />
           <div class="card">
             <div class="front">
-              <img src="/img/Miniaturas/aziz-acharki-549137-unsplash-1200x775.jpg" class="front"  alt="Vanessa">
-            </div>         
+              <iframe width="350" height="240" src="https://www.youtube.com/embed/n3PhO67f524" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="iframe2"></iframe></div>         
           </div>
         </label>
       </li>             
@@ -294,8 +290,7 @@
         <input type="checkbox" data-video-id="wJWK5lS80m8" class="video2" />
           <div class="card">
              <div class="front">
-              <img src="/img/Miniaturas/Discapacidad-750x350.jpg" class="front">
-            </div>      
+              <iframe width="350" height="240" src="https://www.youtube.com/embed/wUAsU2mYa8k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            </div>      
           </div>
         </label>
       </li>
@@ -304,8 +299,7 @@
         <input type="checkbox"  data-video-id="_N73PhbQ0AM" class="video3" />
           <div class="card">
             <div class="front">
-             <img src="/img/Miniaturas/ganadores.jpg" class="front">
-            </div>      
+              <iframe width="350" height="240" src="https://www.youtube.com/embed/b5TFzkC-SSg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            </div>      
           </div>
         </label>
       </li>
@@ -314,8 +308,7 @@
         <input type="checkbox" data-video-id="wJWK5lS80m8" class="video4" />
           <div class="card">
             <div class="front">
-              <img src="/img/Miniaturas/images.jpg" class="front">
-            </div>      
+              <iframe width="350" height="240" src="https://www.youtube.com/embed/b1RJS_4rWY8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            </div>      
           </div>
         </label>
       </li>
@@ -324,8 +317,7 @@
         <input type="checkbox" data-video-id="wJWK5lS80m8" class="video5" />
           <div class="card">
             <div class="front">
-              <img src="/img/Miniaturas/IMG_0319.JPG" class="front">
-            </div>      
+              <iframe width="350" height="240" src="https://www.youtube.com/embed/sykji5BQ4W8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            </div>      
           </div>
         </label>
       </li>
@@ -334,13 +326,21 @@
         <input type="checkbox"  data-video-id="wJWK5lS80m8" class="video6" />
           <div class="card">
             <div class="front">
-              <img src="/img/Miniaturas/Painting_Art_Back_view_Photographer_575380_3840x2400.jpg" class="front">
-            </div>      
+              <iframe width="350" height="240" src="https://www.youtube.com/embed/FHWAo1ae2e4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            </div>      
+          </div>
+        </label>
+      </li>
+      <li>
+        <label>
+        <input type="checkbox"  data-video-id="wJWK5lS80m8" class="video7" />
+          <div class="card">
+            <div class="front">
+              <iframe width="350" height="240" src="https://www.youtube.com/embed/jv4EupjHIHY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            </div>      
           </div>
         </label>
       </li>
     </div>   
-      <div class="uk-visible@s boton">
+      <div class="boton">
         <a class="uk-position-center-left-out uk-position-small" style="background-color: #ff8308; border-radius: 50%; border: 2px solid;" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
         <a class="uk-position-center-right-out uk-position-small" style="background-color: #ff8308; border-radius: 50%; border: 2px solid;" href="#" uk-slidenav-next uk-slider-item="next"></a>
       </div>     
@@ -362,41 +362,34 @@
 </div>
 
 <div class="atencion_usuario container-fluid">
-  <div  class="wave_genially_cerrar position-absolute" style="height: 125px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.90,69.56 C200.00,-101.15 272.23,223.51 502.48,6.43 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #2596be ;"></path></svg></div>
+  <div  class="wave_genially_cerrar position-absolute" style="height: 140px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.90,69.56 C200.00,-101.15 272.23,223.51 502.48,6.43 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #2596be ;"></path></svg></div>
 
   <div class="atencion_item">
-    <!-- <h1>Atencion al Usuario</h1>
-    <p>Lun a Vie de 7:00 a.m a 8:00 p.m - Sáb de 7:00 a.m a 3:00 p.m</p> -->
-    <div class="atencion_item2 row">
-
-      <div class="col">
+   <h1>Atencion al Usuario</h1>
+    <p><strong>Lun a Vie de 7:00 a.m a 8:00 p.m -<br> Sáb de 7:00 a.m a 3:00 p.m</strong></p>
+    <div class="atencion_item2">
+      <div class="comunicaciones">
         <div class="card" style="width: 18rem;">
           <ul class="list-group list-group-flush">
             <li class="list-group-item">
               <img src="/img/Recursos/Recurso 1.png">
           </li>
             <li class="list-group-item">Correo</li>
-            <li class="list-group-item">cie@ucp.edu.co</li>
+            <li class="list-group-item"><strong>@ucp.edu.co</strong></li>
           </ul>
         </div>
       </div>
 
-      <div class="col">
+      <div class="comunicaciones">
         <div class="card" style="width: 18rem;">
           <ul class="list-group list-group-flush">
             <li class="list-group-item "><img src="/img/Recursos/Recurso 2.png"></li>
             <li class="list-group-item">WhatsApp</li>
-            <li class="list-group-item">+57 316 862 34 14</li>
+            <li class="list-group-item"><strong>+57 316 862 34 14</strong></li>
           </ul>
         </div>
       </div>
     </div>
-  </div>
-  <div class="cerrar_soporte position-absolute" style="height: 125px; overflow: hidden;" >
-    <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
-      <path d="M-0.90,69.56 C200.00,-101.15 272.23,223.51 502.48,6.43 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #2596be ;">
-      </path>
-    </svg>
   </div>
 </div>
 

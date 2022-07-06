@@ -5,27 +5,29 @@ $("#Formulario").click(function () {
   $("#Formulario").css("animation", "none");
 });
 
+var iframe = document.getElementById('iframe2');
+iframe.addEventListener('click', Handler);
+
+function Handler() {
+    alert('works');
+}
+
 
 function cambiarcolor(){
   
-let icon = document.getElementById("instagram")
-let container = document.getElementById("programas_container")
-let styles = document.getElementsByClassName("elementos_redes")
-
+let container = document.getElementById("body")
 let rect = container.getBoundingClientRect();
-let rect2 = icon.getBoundingClientRect();
 
-  if (rect.y < 400 && rect.y > -170){
+  if (rect.y < -300 && rect.y > -1000){
     $("#elementos_redes a").css("color", "white")
-  }else{
+  }else if (rect.y < -4800  && rect.y > -5200) {
+    $("#elementos_redes a").css("color", "white")
+  } else {
     $("#elementos_redes a").css("color", "#ff8308")
   }
 }
 
 setInterval(cambiarcolor, 1000)
-
-
-
 
 document.addEventListener("DOMContentLoaded", function () {
   var calendarEl = document.getElementById("calendar");
@@ -198,9 +200,10 @@ simplyCountdown(".simply-countdown", {
   // in case of inline set to false
   enableUtc: false, //Use UTC or not - default : false
   onEnd: function () {
+    $(".simply-countdown").css("display", "none");;
     return;
   }, //Callback on countdown end, put your own function here
-  refresh: 1000, // default refresh every 1s
+  refresh: 60000, // default refresh every 1s
   sectionClass: "simply-section", //section css class
   amountClass: "simply-amount", // amount css class
   wordClass: "simply-word", // word css class

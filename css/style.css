@@ -9,6 +9,7 @@
   top: 30%;
   right: 0;
   flex-direction: column;
+  z-index: 299;
 }
 
 .uk-slider-items.uk-grid {
@@ -125,13 +126,6 @@
   width: max-content;
 }
 
-.list-group img {
-  height: 100px;
-}
-
-.list-group {
-  font-size: 20px;
-}
 
 .list-group-item {
   border: none;
@@ -152,7 +146,6 @@
 
 #loading {
   display: none;
-
   position: absolute;
   top: 10px;
   right: 10px;
@@ -181,17 +174,6 @@
   background-color: #23a2b7;
 }
 
-.atencion_item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.atencion_item2 img {
-  background-color: white;
-  border-radius: 50%;
-}
 .atencion_item2 li {
   color: white;
 }
@@ -214,7 +196,7 @@
 footer {
   display: flex;
   justify-content: center;
-  background-color: #2596be;
+  background-color: #FF8008;
 }
 
 footer p {
@@ -228,24 +210,164 @@ footer p {
   padding: 10px;
 }
 
-.atencion_usuario {
-  position: relative;
-  background-image: url(/img/Miniaturas/ganadores.jpg);
-  background-size: 100% 100%;
-  display: flex;
-  text-align: center;
-  width: 100%;
-  height: 100vh;
+.atencion_usuario .row{
+  margin-right: 0 !important;
+}
+
+
+
+@media (max-width: 800px) {
+
+  .wave_genially_cerrar{
+    height: 100px !important;
+  }
+  
+  .cerrar_soporte {
+    height: 100px !important;
+  }
+
+  .atencion_usuario {
+    position: relative;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    text-align: center;
+    width: 100%;
+    height: 60vh;
+    padding: 0;
+  }
+
+
+}
+
+@media (min-width: 800px) and (max-width: 1500px) {
+  .atencion_usuario {
+    position: relative;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    text-align: center;
+    width: 100%;
+    height: 110vh;
+    padding: 0;
+  }
+
+  .atencion_item h1 {
+    margin-top: 100px;
+    font-size: 40px;
+    text-shadow: 2px 2px 0px #000000;
+    color: white;
+  }
+
+  .atencion_item p {
+    font-size: 1.3em;
+    color: #ffffff;
+    text-shadow: 2px 2px 0px #000000;
+    font-size: 25px;
+    text-align: center;
+    margin-left: 200px
+  ;
+  }
+
+  .atencion_item2{
+    display: flex;
+    width: 100%;
+    justify-items: center;
+    justify-content: flex-end;
+  }
+
+  .atencion_item2 .card{
+    width: auto !important; 
+    margin-right: 20vh;
+  }
+  .list-group img {
+    height: 105px;
+  }
+  
+  .list-group {
+    font-size: 25px;
+    text-shadow: 2px 2px 0px #000000;
+  }  
+
+  .atencion_item2{
+    margin-bottom: 100px;
+  }
+
+  
+}
+
+@media (max-width: 800px) {
+  .atencion_item {
+    background-image: url(/img/Recursos/Atención\ al\ usuario1.png);
+    background-color: #FF8008;
+    background-size: 100% 60vh;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .atencion_item h1 {
+    font-size: 25px;
+    text-shadow: 2px 2px 0px #000000;
+    color: white;
+  }
+
+  .atencion_item p {
+    width: 100%;
+    font-size: 1.3em;
+    color: #ffffff;
+    text-shadow: 2px 2px 0px #000000;
+    font-size: 13px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .atencion_item2{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    justify-items: center;
+    height: 15px;
+  }
+
+  .atencion_item2 .card{
+    width: auto !important; 
+  }
+  .list-group img {
+    height: 50px;
+  }
+  
+  .list-group {
+    font-size: 13px;
+  }  
+
+  .atencion_item2{
+    margin-bottom: 100px;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1500px) {
+  .atencion_item {
+    background-image: url(/img/Recursos/Atención\ al\ usuario1.png);
+    background-color: #FF8008;
+    background-size: 100% 110vh;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  }
 }
 
 .atencion_item {
   width: 100%;
 }
 
-.atencion_item p {
-  font-size: 1.3em;
-  color: #4d4d4d;
-}
+
 
 .enlace {
   display: flex;
@@ -267,10 +389,8 @@ footer p {
   cursor: pointer;
   background-color: #222;
 }
-.atencion_item h1 {
-  text-shadow: 2px 2px 0px #000000;
-  color: #ff8308;
-}
+
+
 
 #nombres {
   width: 100%;
@@ -287,6 +407,7 @@ footer p {
   align-items: center;
   text-align: center;
 }
+
 
 .botones_color a {
   padding: 10px;
@@ -676,15 +797,16 @@ nav {
   width: 100%;
 }
 
-@media (min-width: 800px) and (max-width: 50000px) {
+@media (min-width: 800px) and (max-width: 4000px) {
   .informativo_programas {
-    height: 100vh;
+    height: 120vh;
     display: grid;
     justify-content: center;
     align-items: center;
     text-align: center;
     grid-template-columns: 25% 25% 25% 25%;
     justify-items: center;
+    image-rendering: auto;
   }
 }
 
@@ -1035,6 +1157,9 @@ nav {
 /* ---------------------------------------------------------------
 -------------------------- Ganadores -----------------------------
 ------------------------------------------------------------------ */
+.ganadores{
+  z-index: 1;
+}
 
 .ganadores ul {
   transition: none !important;
@@ -1042,7 +1167,7 @@ nav {
 
 @media (min-width: 800px) and (max-width: 4500px) {
   .ganadores .uk-panel {
-    height: 100vh;
+    height: 120vh;
     margin-top: 20px;
   }
 
@@ -1052,7 +1177,7 @@ nav {
   }
 }
 
-@media (min-width: 250px) and (max-width: 450px) {
+@media (min-width: 250px) and (max-width: 800px) {
   .ganadores .uk-panel {
     margin-top: 20px;
     height: 50vh;
@@ -1069,8 +1194,10 @@ nav {
   width: 100%;
 }
 
-@media (min-width: 800px) and (max-width: 1500px) {
+@media (min-width: 800px) and (max-width: 4500px) {
   .containerTextoGanadores {
+    bottom: 70%;
+    position: absolute !important;
     font-family: "Poppins", sans-serif;
     border: black;
     border-radius: 10px;
@@ -1081,11 +1208,17 @@ nav {
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
     font-size: 20px;
     cursor: default;
+    z-index: 69;
+    color: white;
+
   }
 }
 
-@media (min-width: 250px) and (max-width: 450px) {
+@media (min-width: 250px) and (max-width: 800px) {
   .containerTextoGanadores {
+    position: absolute !important;
+    bottom: 60%;
+    z-index: 69;
     font-family: "Poppins", sans-serif;
     border: black;
     border-radius: 10px;
@@ -1096,6 +1229,19 @@ nav {
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
     font-size: 15px;
     cursor: default;
+    color: white;
+  }
+
+  .wave_genially{
+    height: 100px !important;
+  }
+
+  .waveFirstSistematizacion{
+    height: 100px !important;
+  }
+
+  .waveTalleristasOpen{
+    height: 100px !important;
   }
 }
 
@@ -1109,6 +1255,29 @@ nav {
 /* ---------------------------------------------------------------
 ---------------------------- VIDEOS ------------------------------
 ------------------------------------------------------------------ */
+
+.boton a{
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgb(61, 52, 52) !important;
+}
+
+
+@media (min-width: 250px) and (max-width: 800px) {
+  .boton{
+  position: relative !important;
+  margin: 0 !important;
+  }
+  
+
+  .uk-position-center-left-out {
+    right: 50% !important;
+  }
+
+  .uk-position-center-right-out {
+    left: 50% !important;
+  }
+}
+
 
 .itemsSliderVideos {
   height: 300px;
