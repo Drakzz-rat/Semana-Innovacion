@@ -126,7 +126,6 @@
   width: max-content;
 }
 
-
 .list-group-item {
   border: none;
 }
@@ -196,7 +195,7 @@
 footer {
   display: flex;
   justify-content: center;
-  background-color: #FF8008;
+  background-color: #ff8008;
 }
 
 footer p {
@@ -210,18 +209,15 @@ footer p {
   padding: 10px;
 }
 
-.atencion_usuario .row{
+.atencion_usuario .row {
   margin-right: 0 !important;
 }
 
-
-
 @media (max-width: 800px) {
-
-  .wave_genially_cerrar{
+  .wave_genially_cerrar {
     height: 100px !important;
   }
-  
+
   .cerrar_soporte {
     height: 100px !important;
   }
@@ -236,8 +232,6 @@ footer p {
     height: 60vh;
     padding: 0;
   }
-
-
 }
 
 @media (min-width: 800px) and (max-width: 1500px) {
@@ -265,41 +259,38 @@ footer p {
     text-shadow: 2px 2px 0px #000000;
     font-size: 25px;
     text-align: center;
-    margin-left: 200px
-  ;
+    margin-left: 200px;
   }
 
-  .atencion_item2{
+  .atencion_item2 {
     display: flex;
     width: 100%;
     justify-items: center;
     justify-content: flex-end;
   }
 
-  .atencion_item2 .card{
-    width: auto !important; 
+  .atencion_item2 .card {
+    width: auto !important;
     margin-right: 20vh;
   }
   .list-group img {
     height: 105px;
   }
-  
+
   .list-group {
     font-size: 25px;
     text-shadow: 2px 2px 0px #000000;
-  }  
-
-  .atencion_item2{
-    margin-bottom: 100px;
   }
 
-  
+  .atencion_item2 {
+    margin-bottom: 100px;
+  }
 }
 
 @media (max-width: 800px) {
   .atencion_item {
     background-image: url(/img/Recursos/Atención\ al\ usuario1.png);
-    background-color: #FF8008;
+    background-color: #ff8008;
     background-size: 100% 60vh;
     padding: 0;
     display: flex;
@@ -325,7 +316,7 @@ footer p {
     justify-content: flex-end;
   }
 
-  .atencion_item2{
+  .atencion_item2 {
     display: grid;
     grid-template-columns: 50% 50%;
     width: 100%;
@@ -333,18 +324,18 @@ footer p {
     height: 15px;
   }
 
-  .atencion_item2 .card{
-    width: auto !important; 
+  .atencion_item2 .card {
+    width: auto !important;
   }
   .list-group img {
     height: 50px;
   }
-  
+
   .list-group {
     font-size: 13px;
-  }  
+  }
 
-  .atencion_item2{
+  .atencion_item2 {
     margin-bottom: 100px;
   }
 }
@@ -352,7 +343,7 @@ footer p {
 @media (min-width: 800px) and (max-width: 1500px) {
   .atencion_item {
     background-image: url(/img/Recursos/Atención\ al\ usuario1.png);
-    background-color: #FF8008;
+    background-color: #ff8008;
     background-size: 100% 110vh;
     padding: 0;
     display: flex;
@@ -366,8 +357,6 @@ footer p {
 .atencion_item {
   width: 100%;
 }
-
-
 
 .enlace {
   display: flex;
@@ -390,8 +379,6 @@ footer p {
   background-color: #222;
 }
 
-
-
 #nombres {
   width: 100%;
   background-color: #222;
@@ -407,7 +394,6 @@ footer p {
   align-items: center;
   text-align: center;
 }
-
 
 .botones_color a {
   padding: 10px;
@@ -741,56 +727,56 @@ nav {
   height: 100%;
 }
 
-.Imagen1{
+.Imagen1 {
   background-image: url(/img/Categorias/categorias1.png);
   background-size: 100% 100%;
   height: 100%;
   width: 100%;
 }
 
-.Imagen2{
+.Imagen2 {
   background-image: url(/img/Categorias/categorias2.png);
   background-size: 100% 100%;
   height: 100%;
   width: 100%;
 }
 
-.Imagen3{
+.Imagen3 {
   background-image: url(/img/Categorias/categorias3.png);
   background-size: 100% 100%;
   height: 100%;
   width: 100%;
 }
 
-.Imagen4{
+.Imagen4 {
   background-image: url(/img/Categorias/categorias4.png);
   background-size: 100% 100%;
   height: 100%;
   width: 100%;
 }
 
-.Imagen1:hover{
+.Imagen1:hover {
   background-image: url(/img/Categorias/1\ Educación\ Virtual.png);
   background-size: 100% 100%;
   height: 100%;
   width: 100%;
 }
 
-.Imagen2:hover{
+.Imagen2:hover {
   background-image: url(/img/Categorias/2\ Derecho\ de\ Autor.png);
   background-size: 100% 100%;
   height: 100%;
   width: 100%;
 }
 
-.Imagen3:hover{
+.Imagen3:hover {
   background-image: url(/img/Categorias/3\ Bigdata.png);
   background-size: 100% 100%;
   height: 100%;
   width: 100%;
 }
 
-.Imagen4:hover{
+.Imagen4:hover {
   background-image: url(/img/Categorias/4\ Producción.png);
   background-size: 100% 100%;
   height: 100%;
@@ -1157,7 +1143,7 @@ nav {
 /* ---------------------------------------------------------------
 -------------------------- Ganadores -----------------------------
 ------------------------------------------------------------------ */
-.ganadores{
+.ganadores {
   z-index: 1;
 }
 
@@ -1210,7 +1196,6 @@ nav {
     cursor: default;
     z-index: 69;
     color: white;
-
   }
 }
 
@@ -1232,15 +1217,15 @@ nav {
     color: white;
   }
 
-  .wave_genially{
+  .wave_genially {
     height: 100px !important;
   }
 
-  .waveFirstSistematizacion{
+  .waveFirstSistematizacion {
     height: 100px !important;
   }
 
-  .waveTalleristasOpen{
+  .waveTalleristasOpen {
     height: 100px !important;
   }
 }
@@ -1256,18 +1241,16 @@ nav {
 ---------------------------- VIDEOS ------------------------------
 ------------------------------------------------------------------ */
 
-.boton a{
+.boton a {
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
   border: 1px solid rgb(61, 52, 52) !important;
 }
 
-
 @media (min-width: 250px) and (max-width: 800px) {
-  .boton{
-  position: relative !important;
-  margin: 0 !important;
+  .boton {
+    position: relative !important;
+    margin: 0 !important;
   }
-  
 
   .uk-position-center-left-out {
     right: 50% !important;
@@ -1277,7 +1260,6 @@ nav {
     left: 50% !important;
   }
 }
-
 
 .itemsSliderVideos {
   height: 300px;
