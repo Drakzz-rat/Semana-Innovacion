@@ -14,7 +14,6 @@ CSS Puro<br>
 <h3>Javascript:</h3>
 Javascript Puro<br>
 Jquery<br>
-Framework de Videos-Modales<br>
 Contador<br>
 Full Calendar<br>
 
