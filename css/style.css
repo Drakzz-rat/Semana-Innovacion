@@ -231,10 +231,12 @@ footer p {
     width: 100%;
     height: 60vh;
     padding: 0;
+background: linear-gradient(180deg, rgba(37,150,190,1) 30%, #ff8008 70%);
+
   }
 }
 
-@media (min-width: 800px) and (max-width: 1500px) {
+@media (min-width: 800px) and (max-width: 3500px) {
   .atencion_usuario {
     position: relative;
     background-size: 100% 100%;
@@ -244,6 +246,8 @@ footer p {
     width: 100%;
     height: 110vh;
     padding: 0;
+    background: linear-gradient(180deg, rgba(37,150,190,1) 30%, #ff8008 70%);
+
   }
 
   .atencion_item h1 {
@@ -290,7 +294,6 @@ footer p {
 @media (max-width: 800px) {
   .atencion_item {
     background-image: url(/img/Recursos/Atención\ al\ usuario1.png);
-    background-color: #ff8008;
     background-size: 100% 60vh;
     padding: 0;
     display: flex;
@@ -304,6 +307,7 @@ footer p {
     font-size: 25px;
     text-shadow: 2px 2px 0px #000000;
     color: white;
+    z-index: 69;
   }
 
   .atencion_item p {
@@ -340,10 +344,9 @@ footer p {
   }
 }
 
-@media (min-width: 800px) and (max-width: 1500px) {
+@media (min-width: 800px) and (max-width: 3500px) {
   .atencion_item {
     background-image: url(/img/Recursos/Atención\ al\ usuario1.png);
-    background-color: #ff8008;
     background-size: 100% 110vh;
     padding: 0;
     display: flex;
@@ -470,7 +473,7 @@ div .genially-embed {
   }
 }
 
-@media (min-width: 800px) and (max-width: 1500px) {
+@media (min-width: 800px) and (max-width: 3500px) {
   .uk-overlay2 {
     padding: 30px 30px;
   }
@@ -539,6 +542,7 @@ nav {
   left: 0px;
   width: 100%;
   transform: rotate(180deg);
+  z-index: 71;
 }
 
 .wave_cerrar_informativo2 {
@@ -648,7 +652,7 @@ nav {
   }
 }
 
-@media (min-width: 451px) and (max-width: 1500px) {
+@media (min-width: 451px) and (max-width: 3500px) {
   .simply-countdown > .simply-section {
     width: 150px;
     height: 150px;
@@ -697,7 +701,7 @@ nav {
   }
 }
 
-@media (min-width: 451px) and (max-width: 1500px) {
+@media (min-width: 451px) and (max-width: 3500px) {
   .simply-countdown .simply-amount {
     font-weight: 400 !important;
     color: #d3811e;
@@ -847,7 +851,7 @@ nav {
   }
 }
 
-@media (min-width: 451px) and (max-width: 1500px) {
+@media (min-width: 451px) and (max-width: 3500px) {
   .primero {
     height: 200px;
     width: 200px;
@@ -1053,8 +1057,8 @@ nav {
 }
 
 .sliderTalleristas p {
-  color: red;
-  filter: brightness(4);
+  text-align: center;
+  filter: brightness(1.5);
 }
 
 .slider label:hover .card {
@@ -1108,8 +1112,12 @@ nav {
   justify-content: center;
 }
 
-.Sistematizacion p {
+.textoShare {
   text-align: left;
+}
+
+.experienciasShare {
+  text-align: center !important;
 }
 
 .containerSistematizacion h1 {
