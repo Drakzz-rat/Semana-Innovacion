@@ -29,91 +29,140 @@ let rect = container.getBoundingClientRect();
 
 setInterval(cambiarcolor, 1000)
 
-document.addEventListener("DOMContentLoaded", function () {
-  var calendarEl = document.getElementById("calendar");
+
+document.addEventListener('DOMContentLoaded', function() {
+  var calendarEl = document.getElementById('calendar');
   var calendar = new FullCalendar.Calendar(calendarEl, {
+    initialView: 'dayGridMonth',
+    initialDate: '2022-07-01',
     headerToolbar: {
-      left: "",
-      center: "title",
-      right: "dayGridMonth,listYear",
+      left: '',
+      center: 'title',
+      right: 'listYear'
     },
-    locales: "es",
+    events: [
+      {
+        title: 'Pedagogía universitaria en la virtualidad UAO',
+        start: '2022-07-26T08:00:00',
+        end: '2022-07-26T18:00:00',
+        url: "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20220726T130000Z%2F20220728T230000Z&location=Universidad%20Cat%C3%B3lica%20de%20Pereira%2C%20Avenida%20Sur%20%2F%20Las%20Americas%20Cra%2021%20%23%2049-95%2C%20Pereira%2C%20Risaralda%2C%20Colombia&text=Pedagog%C3%ADa%20universitaria%20en%20la%20virtualidad",
+      },
+      {
+        title: 'Pedagogía universitaria en la virtualidad UAO',
+        start: '2022-07-27T08:00:00',
+        end: '2022-07-26T12:00:00',
+        url: "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20220727T130000Z%2F20220727T170000Z&location=Universidad%20Cat%C3%B3lica%20de%20Pereira%2C%20Avenida%20Sur%20%2F%20Las%20Americas%20Cra%2021%20%23%2049-95%2C%20Pereira%2C%20Risaralda%2C%20Colombia&text=Pedagog%C3%ADa%20universitaria%20en%20la%20virtualidad"
 
-    displayEventTime: false, // don't show the time column in list view
+      },
+      {
+        title: 'Clases virtuales metaverso Alejandro Proskahuer',
+        start: '2022-07-27T16:00:00',
+        end: '2022-07-27T18:00:00',
+        url: "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20220727T210000Z%2F20220727T230000Z&location=Universidad%20Cat%C3%B3lica%20de%20Pereira%2C%20Avenida%20Sur%20%2F%20Las%20Americas%20Cra%2021%20%23%2049-95%2C%20Pereira%2C%20Risaralda%2C%20Colombia&text=Clases%20virtuales%20metaverso%20Alejandro%20Proskahuer"
 
-    // THIS KEY WON'T WORK IN PRODUCTION!!!
-    // To make your own Google API key, follow the directions here:
-    // http://fullcalendar.io/docs/google_calendar/
-    googleCalendarApiKey: "AIzaSyA4GEOsoYb8pXnfbah3oRRlbmOmTL85vFU",
+      },
+      {
+        title: "Derechos de autor en la virtualidad Vanessa Rivas",
+        start: '2022-07-28T09:00:00',
+        end: '2022-07-28T11:00:00',
+        url: "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20220728T140000Z%2F20220728T160000Z&location=Universidad%20Cat%C3%B3lica%20de%20Pereira%2C%20Avenida%20Sur%20%2F%20Las%20Americas%20Cra%2021%20%23%2049-95%2C%20Pereira%2C%20Risaralda%2C%20Colombia&text=Derechos%20de%20autor%20en%20la%20virtualidad%20"
 
-    // US Holidays
-    events: "es.co#holiday@group.v.calendar.google.com",
+      },
+      {
+        title: 'Creatividad y estética Juan David Atuesta',
+        start: '2022-07-28T16:00:00',
+        end: '2022-07-28T18:00:00',
+        url: "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20220728T210000Z%2F20220728T230000Z&location=Universidad%20Cat%C3%B3lica%20de%20Pereira%2C%20Avenida%20Sur%20%2F%20Las%20Americas%20Cra%2021%20%23%2049-95%2C%20Pereira%2C%20Risaralda%2C%20Colombia&text=Creatividad%20y%20est%C3%A9tica"
 
-    eventClick: function (arg) {
-      // opens events in a popup window
-      window.open(
-        arg.event.url,
-        "google-calendar-event",
-        "width=700,height=600"
-      );
+      },
+      {
+        title: 'Producción de video Carlos Mario Betancurt',
+        start: '2022-07-29T16:00:00',
+        end: '2022-07-29T18:00:00',
+        url: "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20220728T210000Z%2F20220728T230000Z&location=Universidad%20Cat%C3%B3lica%20de%20Pereira%2C%20Avenida%20Sur%20%2F%20Las%20Americas%20Cra%2021%20%23%2049-95%2C%20Pereira%2C%20Risaralda%2C%20Colombia&text=Producci%C3%B3n%20de%20video%20Carlos%20Mario%20Betancurt"
+      }
+    ]
+  });
 
-      arg.jsEvent.preventDefault(); // don't navigate in main tab
+  calendar.render();
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  var calendarEl = document.getElementById('calendar1');
+  var calendar = new FullCalendar.Calendar(calendarEl, {
+    initialView: 'dayGridMonth',
+    initialDate: '2022-07-01',
+    headerToolbar: {
+      left: '',
+      center: 'title',
+      right: 'listYear'
     },
+    events: [
+      {
+        title: 'Seguridad informática',
+        start: '2022-07-26T16:00:00',
+        end: '2022-07-26T18:00:00',
+        url: "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20220726T210000Z%2F20220726T230000Z&location=Universidad%20Cat%C3%B3lica%20de%20Pereira%2C%20Avenida%20Sur%20%2F%20Las%20Americas%20Cra%2021%20%23%2049-95%2C%20Pereira%2C%20Risaralda%2C%20Colombia&text=Seguridad%20inform%C3%A1tica",
+      },
+      {
+        title: 'Creatividad y estética',
+        start: '2022-07-28T16:00:00',
+        end: '2022-07-28T18:00:00',
+        url: "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20220728T210000Z%2F20220728T230000Z&location=Universidad%20Cat%C3%B3lica%20de%20Pereira%2C%20Avenida%20Sur%20%2F%20Las%20Americas%20Cra%2021%20%23%2049-95%2C%20Pereira%2C%20Risaralda%2C%20Colombia&text=Creatividad%20y%20est%C3%A9tica"
 
-    loading: function (bool) {
-      document.getElementById("loading").style.display = bool
-        ? "block"
-        : "none";
+      },
+    ]
+  });
+
+  calendar.render();
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  var calendarEl = document.getElementById('calendar2');
+  var calendar = new FullCalendar.Calendar(calendarEl, {
+    initialView: 'dayGridMonth',
+    initialDate: '2022-07-01',
+    headerToolbar: {
+      left: '',
+      center: 'title',
+      right: 'listYear'
     },
+    events: [
+      {
+        title: 'Seguridad informática',
+        start: '2022-07-26T16:00:00',
+        end: '2022-07-26T18:00:00',
+        url: "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20220726T210000Z%2F20220726T230000Z&location=Universidad%20Cat%C3%B3lica%20de%20Pereira%2C%20Avenida%20Sur%20%2F%20Las%20Americas%20Cra%2021%20%23%2049-95%2C%20Pereira%2C%20Risaralda%2C%20Colombia&text=Seguridad%20inform%C3%A1tica",
+      },
+      {
+        title: 'Herramientas para el aprendizaje',
+        start: '2022-07-27T10:00:00',
+        end: '2022-07-26T12:00:00',
+        url: "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20220727T150000Z%2F20220727T170000Z&location=Universidad%20Cat%C3%B3lica%20de%20Pereira%2C%20Avenida%20Sur%20%2F%20Las%20Americas%20Cra%2021%20%23%2049-95%2C%20Pereira%2C%20Risaralda%2C%20Colombia&text=Herramientas%20para%20el%20aprendizaje"
+
+      },
+      {
+        title: 'Creatividad y estética',
+        start: '2022-07-28T16:00:00',
+        end: '2022-07-28T18:00:00',
+        url: "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20220728T210000Z%2F20220728T230000Z&location=Universidad%20Cat%C3%B3lica%20de%20Pereira%2C%20Avenida%20Sur%20%2F%20Las%20Americas%20Cra%2021%20%23%2049-95%2C%20Pereira%2C%20Risaralda%2C%20Colombia&text=Creatividad%20y%20est%C3%A9tica"
+
+      },
+      {
+        title: "Referenciación bibliográfica y Mendeley: Gestores bibliográficos",
+        start: '2022-07-29T16:00:00',
+        end: '2022-07-29T18:00:00',
+        url: "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20220729T210000Z%2F20220729T230000Z&location=Universidad%20Cat%C3%B3lica%20de%20Pereira%2C%20Avenida%20Sur%20%2F%20Las%20Americas%20Cra%2021%20%23%2049-95%2C%20Pereira%2C%20Risaralda%2C%20Colombia&text=Referenciaci%C3%B3n%20bibliogr%C3%A1fica%20y%20Mendeley%3A%20Gestores%20bibliogr%C3%A1ficos"
+
+      },
+    ]
   });
 
   calendar.render();
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  var calendarEl = document.getElementById("calendar1");
-
-  var calendar = new FullCalendar.Calendar(calendarEl, {
-    headerToolbar: {
-      left: "",
-      center: `title`,
-      right: "dayGridMonth,listYear",
-    },
-    locales: "es",
-
-    displayEventTime: false, // don't show the time column in list view
-
-    // THIS KEY WON'T WORK IN PRODUCTION!!!
-    // To make your own Google API key, follow the directions here:
-    // http://fullcalendar.io/docs/google_calendar/
-    googleCalendarApiKey: "AIzaSyA4GEOsoYb8pXnfbah3oRRlbmOmTL85vFU",
-
-    // US Holidays
-    events: "es.co#holiday@group.v.calendar.google.com",
-
-    eventClick: function (arg) {
-      // opens events in a popup window
-      window.open(
-        arg.event.url,
-        "google-calendar-event",
-        "width=700,height=600"
-      );
-
-      arg.jsEvent.preventDefault(); // don't navigate in main tab
-    },
-
-    loading: function (bool) {
-      document.getElementById("loading").style.display = bool
-        ? "block"
-        : "none";
-    },
-  });
-
-  calendar.render();
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-  var calendarEl = document.getElementById("calendar2");
+  var calendarEl = document.getElementById("calendar3");
 
   var calendar = new FullCalendar.Calendar(calendarEl, {
     headerToolbar: {
@@ -229,3 +278,5 @@ $(function () {
     slideWidth: 600,
   });
 });
+
+

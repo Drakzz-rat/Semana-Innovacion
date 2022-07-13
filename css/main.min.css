@@ -685,22 +685,33 @@ a.fc-event:hover {
 }
 .fc-daygrid-event {
   position: relative;
-  white-space: nowrap;
+  /*white-space: nowrap;*/
   border-radius: 3px;
   font-size: 0.85em;
   font-size: var(--fc-small-font-size, 0.85em);
 }
+
+.fc-event-title:hover{
+  text-decoration: none;
+}
+
 .fc-daygrid-block-event .fc-event-time {
   font-weight: 700;
 }
 .fc-daygrid-block-event .fc-event-time,
 .fc-daygrid-block-event .fc-event-title {
+  font-size: 10px;
+  color: white;;
   padding: 1px;
 }
 .fc-daygrid-dot-event {
   display: flex;
-  align-items: center;
-  padding: 2px 0;
+    padding: 2px 0;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    align-content: flex-end;
 }
 .fc-daygrid-dot-event .fc-event-title {
   flex-grow: 1;
@@ -718,6 +729,7 @@ a.fc-event:hover {
   bottom: -10px;
 }
 .fc-daygrid-event-dot {
+  display: none;
   margin: 0 4px;
   box-sizing: content-box;
   width: 0;

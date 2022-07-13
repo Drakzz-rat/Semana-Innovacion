@@ -65,20 +65,23 @@
 </div>
 </div>
 
-<div class="container btnCalendarios">
-  <button type="button" onclick="calendario1()" class=" btn_elegir">Profesores</button>
-  <button type="button" onclick="calendario2()" class=" btn_elegir">Administrativo</button>
-  <button type="button" onclick="calendario3()" class=" btn_elegir">Estudiantes</button>
-</div>
 
-<div class="container tituloCalendario" id="Agenda">
-  <h2 id="titulo"> Estudiantes </h2>
-</div>
 
 <div id='loading'>
 </div>
 
-<div data-aos="fade-up" data-aos-duration="2000" class="containerCalendarios" id="calendarios">
+<div class="containerCalendarios" id="calendarios">
+  <div class="container btnCalendarios">
+    <button type="button" onclick="calendario1()" class=" btn_elegir">Profesores</button>
+    <button type="button" onclick="calendario2()" class=" btn_elegir">Administrativo</button>
+    <button type="button" onclick="calendario3()" class=" btn_elegir">Estudiantes</button>
+  </div>
+
+  <div class="container tituloCalendario" id="Agenda">
+    <h2 id="titulo"> Docentes </h2>
+  </div>
+  
+  
   <div class="calendario1">
     <div id='calendar' class="container-fluid calendario">
   </div>
@@ -93,9 +96,14 @@
   <div id='calendar2' class="container-fluid calendario">
     </div>
   </div>
+
+  <div class="calendario4">
+    <div id='calendar3' class="container-fluid calendario">
+      </div>
+    </div>
 </div>
 
-<div  data-aos="fade-up" data-aos-duration="2000" class="talleristas_container" id="Talleristas">
+<div class="talleristas_container" id="Talleristas">
   <div class="waveTalleristasOpen" style="height: 150px; overflow: hidden;" >
     <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
       <path d="M-0.90,69.56 C200.00,-101.15 272.23,223.51 502.48,6.43 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #2596be ;">
@@ -104,7 +112,6 @@
   </div>
 <div class="sliderTalleristas position-relative">
   <h1>Talleristas</h1>
-  <p class="uk-text-meta">Puedes presionar en la imagen para conocer mas de los talleristas</p>
     <div class="uk-hidden@s gifInstrucciones">
       <img src="/img/Recursos/swipe.fafa7564.gif" width="100px" height="100px">
     </div>
@@ -118,13 +125,14 @@
               <input type="checkbox" />
                 <div class="card">
                   <div class="front">
-                    <img src="/img/Talleristas/Vanessa.jpg" class="front"  alt="Vanessa">
-                    <button class="btnNombreTallerista">Vanessa Rivas</button>
-                    <button class="btnCargoTallerista">Asesora en Calidad de los contenidos</button>
+                    <img src="/img/Talleristas/German.jpg" class="front"  alt="German">
+                    <button class="btnNombreTallerista">German Gallego</button>
+                    <img src="/img/Recursos/recursos_interac.png" class="girar" style="margin-bottom: 60px;">
                   </div> 
-                  <div class="back">
-                    <h3>Vanessa Rivas Valencia </h3>
-                    <p>Diseñador gráfico, con más de 14 años de experiencia en la producción de video corporativo, social y comercial, también ha incursionado en producciones de cine documental y realidades extendidas.  Ha desarrollado contenido de motion graphics, modelado y  animación 3D e interactividad. Profesor universitario en el área de diseño gráfico, comunicación y diseño industrial.</p>
+                  <div class="back" id="german">
+                    <h3>German Gallego</h3>
+                    <p>Doctor en Sociedad de la Información y el Conocimiento, Magíster en Comunicación Educativa, Especialista en Video Digital y Tecnologías Online y Offline, Esp. en Periodismo Electrónico y Comunicador Social.
+                      Ha sido directivo académico, investigador, consultor y profesor de diferentes instituciones nacionales e internacionales. Actualmente, es profesor titular, director del Centro de Innovación y Mediación Digital y Director General de UAO Virtual de la Universidad Autónoma de Occidente.</p>
                   </div>                
                 </div>
               </label>
@@ -136,13 +144,14 @@
               <input type="checkbox"  />
                 <div class="card">
                   <div class="front">
-                    <img src="/img/Talleristas/Vanessa.jpg" class="front">
-                    <button class="btnNombreTallerista">Vanessa Rivas</button>
-                    <button class="btnCargoTallerista">Asesora en Calidad de los contenidos</button>
+                    <img src="/img/Talleristas/Juan.jpg" class="front">
+                    <button class="btnNombreTallerista">Juan David Atuesta</button>
+                    <img src="/img/Recursos/recursos_interac.png" class="girar" style="margin-bottom: 60px;">
                   </div>      
-                  <div class="back">
-                    <h3>Vanessa Rivas Valencia </h3>
-                    <p>Diseñador gráfico, con más de 14 años de experiencia en la producción de video corporativo, social y comercial, también ha incursionado en producciones de cine documental y realidades extendidas.  Ha desarrollado contenido de motion graphics, modelado y  animación 3D e interactividad. Profesor universitario en el área de diseño gráfico, comunicación y diseño industrial.</p>
+                  <div class="back" id="juan">
+                    <h3>Juan Atuesta</h3>
+                    <p>Licenciada en Comunicación e Informática Educativa, Asesora Pedagógica del Centro de Innovación Educativa. Se ha desempeñado como formadora virtual, con experiencia en diseño y adaptación de cursos virtuales en plataformas LMS, y construcción pedagógica de ambientes de aprendizaje.
+                    </p>
                  </div>
                 </div>
               </label>
@@ -153,13 +162,13 @@
               <input type="checkbox"  />
                 <div class="card">
                   <div class="front">
-                    <img src="/img/Talleristas/Vanessa.jpg" class="front">
-                    <button class="btnNombreTallerista">Vanessa Rivas</button>
-                    <button class="btnCargoTallerista">Asesora en Calidad de los contenidos</button>
+                    <img src="/img/Talleristas/Carlos.jpg" class="front">
+                    <button class="btnNombreTallerista">Carlos Mario</button>
+                    <img src="/img/Recursos/recursos_interac.png" class="girar" style="margin-bottom: 60px;">
                   </div>      
-                  <div class="back">
-                    <h3>Vanessa Rivas Valencia </h3>
-                    <p>Diseñador gráfico, con más de 14 años de experiencia en la producción de video corporativo, social y comercial, también ha incursionado en producciones de cine documental y realidades extendidas.  Ha desarrollado contenido de motion graphics, modelado y  animación 3D e interactividad. Profesor universitario en el área de diseño gráfico, comunicación y diseño industrial.</p>
+                  <div class="back" id="carlos">
+                    <h3>Carlos Mario</h3>
+                    <p>Lic. y Mg. en Comunicación Educativa, con estudios realizados en Estética y Creación de la UTP. Se ha interesado por investigar el lenguaje de los nuevos medios, las narrativas transmediales, la cibercultura y los laboratorios como escenarios de creación. Ha sido docente en producción de medios tradicionales y digitales en varias universidades. Actualmente es docente del programa de Comunicación Social-Periodismo de la UCP.</p>
                   </div>
                 </div>
               </label>
@@ -170,12 +179,12 @@
               <input type="checkbox"  />
                 <div class="card">
                   <div class="front"><img src="/img/Talleristas/Vanessa.jpg" class="front">
+                    <img src="/img/Recursos/recursos_interac.png" class="girar" style="margin-bottom: 60px;">
                     <button class="btnNombreTallerista">Vanessa Rivas</button>
-                    <button class="btnCargoTallerista">Asesora en Calidad de los contenidos</button>
                   </div>      
-                  <div class="back">
-                    <h3>Vanessa Rivas Valencia </h3>
-                    <p>Diseñador gráfico, con más de 14 años de experiencia en la producción de video corporativo, social y comercial, también ha incursionado en producciones de cine documental y realidades extendidas.  Ha desarrollado contenido de motion graphics, modelado y  animación 3D e interactividad. Profesor universitario en el área de diseño gráfico, comunicación y diseño industrial.</p>
+                  <div class="back" id="vanessa">
+                    <h3>Vanessa Rivas</h3>
+                    <p>Comunicadora Social – Periodista la cual se desempeña como Asesora en Calidad de los Contenidos de la Universidad Católica de Pereira. Ha orientado capacitaciones y cursos relacionados al derecho de autor, la citación bibliográfica y los diferentes manuales de estilo que se utilizan para la redacción de textos académicos.</p>
                   </div>
                 </div>
               </label>
@@ -186,34 +195,49 @@
               <input type="checkbox"  />
                 <div class="card">
                   <div class="front">
-                    <img src="/img/Talleristas/Vanessa.jpg" class="front">
-                    <button class="btnNombreTallerista">Vanessa Rivas</button>
-                    <button class="btnCargoTallerista">Asesora en Calidad de los contenidos</button>
+                    <img src="/img/Talleristas/Gustavo.jpg" class="front">
+                    <img src="/img/Recursos/recursos_interac.png" class="girar" style="margin-bottom: 60px;">
+                    <button class="btnNombreTallerista">Gustavo Moreno</button>
                   </div>      
-                  <div class="back">
-                    <h3>Vanessa Rivas Valencia </h3>
-                    <p>Diseñador gráfico, con más de 14 años de experiencia en la producción de video corporativo, social y comercial, también ha incursionado en producciones de cine documental y realidades extendidas.  Ha desarrollado contenido de motion graphics, modelado y  animación 3D e interactividad. Profesor universitario en el área de diseño gráfico, comunicación y diseño industrial.</p>
+                  <div class="back" id="gustavo">
+                    <h3>Gustavo Moreno</h3>
+                    <p>Administrador de plataforma del Centro Innovación Educativa de la Universidad Católica de Pereira, con estudios en desarrollo de software. Cuenta con experiencia en administración de plataformas LMS, especialmente Moodle. Se ha desempeñado en la gestión de herramientas de comunicación, ha brindado soporte técnico de equipos de cómputo y ha trabajado en aspectos relacionados con seguridad informática.</p>
                   </div>
                 </div>
               </label>
             </li>
-
-            <li>
+             <li>
               <label>
               <input type="checkbox"  />
                 <div class="card">
                   <div class="front">
-                    <img src="/img/Talleristas/Vanessa.jpg" class="front">
-                    <button class="btnNombreTallerista">Vanessa Rivas</button>
-                    <button class="btnCargoTallerista">Asesora en Calidad de los contenidos</button>
+                    <img src="/img/Talleristas/Alejandro.jpg" class="front">
+                    <img src="/img/Recursos/recursos_interac.png" class="girar" style="margin-bottom: 60px;">
+                    <button class="btnNombreTallerista">Alejandro Proskahuer</button>
                   </div>      
-                  <div class="back">                     
-                    <h3>Vanessa Rivas Valencia </h3>
-                    <p>Diseñador gráfico, con más de 14 años de experiencia en la producción de video corporativo, social y comercial, también ha incursionado en producciones de cine documental y realidades extendidas.  Ha desarrollado contenido de motion graphics, modelado y  animación 3D e interactividad. Profesor universitario en el área de diseño gráfico, comunicación y diseño industrial.</p>                    
+                  <div class="back" id="alejandro">                     
+                    <h3>Alejandro Proskahuer</h3>
+                    <p>Diseñador gráfico, con más de 14 años de experiencia en la producción de video corporativo, social y comercial, también ha incursionado en producciones de cine documental y realidades extendidas.  Ha desarrollado contenido de motion graphics, modelado y animación 3D e interactividad. Profesor universitario en el área de diseño gráfico, comunicación y diseño industrial.</p>                    
                   </div>
                 </div>
               </label>
-            </li>           
+            </li>      
+            <li>
+              <label>
+              <input type="checkbox"  />
+                <div class="card">
+                  <div class="front" id="aida">
+                    <img src="/img/Talleristas/Aida.jpg" class="front">
+                    <img src="/img/Recursos/recursos_interac.png" class="girar" style="margin-bottom: 60px;">
+                    <button class="btnNombreTallerista">Aida Jimenez</button>
+                  </div>      
+                  <div class="back">                     
+                    <h3>Aida Jimenez</h3>
+                    <p>Licenciada en Comunicación e Informática Educativa, Asesora Pedagógica del Centro de Innovación Educativa. Se ha desempeñado como formadora virtual, con experiencia en diseño y adaptación de cursos virtuales en plataformas LMS, y construcción pedagógica de ambientes de aprendizaje.                    </p>                    
+                  </div>
+                </div>
+              </label>
+            </li>         
           </div>   
           <div class="uk-visible@s uk-visible\@m uk-visible\@l boton">
             <a class="uk-position-center-left-out" style="background-color: #ff8308; border-radius: 50%;" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
@@ -226,14 +250,14 @@
     <div class="waveFirstSistematizacion" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.90,69.56 C200.00,-101.15 272.23,223.51 502.48,6.43 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #2596be ;"></path></svg></div>
   </div>
                   
-<div data-aos="fade-up" data-aos-duration="2000" class="Sistematizacion">
+<div class="Sistematizacion">
   <div class="container containerSistematizacion">
     <h1>Sistematización de Experiencias Innovadoras</h1>
     <p class="textoShare">Eres docente de la universidad catolica de pereira y tienes una experienciainnovadora de tu practica educativa? Participa de la convocatoria en el marco de la semana de innovacion educativa. te compartimos el formato de sismatizacon de experiencias pedagogicas, puedes diligenciarlo segun los items y la rubica, ten en cuenta que la recepcion sera hasta...... <br><br></p>
     <p class="experienciasShare">¿Que esperas para compartir tus experiencias?</p>
     <div class="formatosDownload row">
-      <a class="col" href="/img/Aida.jpg" download="Aida.jpg">Descargar formato</a>
-      <a class="col">Subir Experiencia</a>
+      <a class="col" href="/img/Documento/Sistematización.docx" download="Sistematizacion de Experiencias.docx">Descargar formato</a>
+      <a class="col" href="https://drive.google.com/drive/folders/1n6-CBfLZ6p1Hw72n0_cnvFwoESxZqB_q" target="_blank">Subir Experiencia</a>
     </div>
   </div>
 </div>
@@ -415,17 +439,16 @@
   <a href="https://api.whatsapp.com/send?phone=+573168623414&text=Hola!%20He%20estado%20en%20tu%20p%C3%A1gina%20web%20y%20quisiera%20obetner%20m%C3%A1s%20informaci%C3%B3n%20a%20cerca%20de%20la%20Semana%20de%20la%20Innovaci%C3%B3n%20Educativa%20y%20sus%20tallere.%20%C2%A1Gracias!" target="_blank" class="bi-whatsapp"></a>
 </div>
 
+
+
+
+
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/js/uikit.min.js"></script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
   <script src="./js/main.min.js"></script>
   <script src="./js/simplyCountdown.min.js"></script>
-  <script src="/js/modal-video.js"></script>
   <script src="./js/script.js"></script>
 </body>
 </html>
